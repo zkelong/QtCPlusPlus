@@ -30,7 +30,8 @@ SOURCES += main.cpp \
     expression/sizeofopereator.cpp \
     expression/newdeleteexpression.cpp \
     expression/bitoperator.cpp \
-    expression/bitsetoperator.cpp
+    expression/bitsetoperator.cpp \
+    expression/typeconversion.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -62,5 +63,6 @@ HEADERS += \
     expression/sizeoperator.h \
     expression/newdeleteexpression.h \
     expression/bitoperator.h \
-    expression/bitsetoperator.h
+    expression/bitsetoperator.h \
+    expression/typeconversion.h
 

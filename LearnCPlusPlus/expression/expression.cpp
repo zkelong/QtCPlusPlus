@@ -8,6 +8,7 @@
 #include "newdeleteexpression.h"
 #include "bitoperator.h"
 #include "bitsetoperator.h"
+#include "typeconversion.h"
 
 void test_expresion()
 {
@@ -19,5 +20,6 @@ void test_expresion()
     //sizeof_operator();  //sizeof操作符
     //newdelete_expression();  //new和delete表达式
     //bit_operator_define();  //位操作符
-    bitset_operator();   //bitset操作
+    //bitset_operator();   //bitset操作
+    typeVersion();  //类型转换
 }

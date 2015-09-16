@@ -31,9 +31,9 @@
 9. new和delete表达式    //expression/newdeleteexpression
 10. 逗号操作符       //expression/null int ival = (ia != 0) ? ix = get_value(), ia[index] = ix : ia[sz] = ix, ia[index] = 0;
 11. 位操作符    //expression/bitoperator
-12. bitset操作    //expression/
-13. 优先级     //expression/
-14. 类型转换   //expression/
+12. bitset操作    //expression/bitsetoperator
+13. 优先级     //expression/null--操作符具有优先级和结合性。赋值操作符是右结合的，算数操作符是左结合的。
+14. 类型转换   //expression/null--算术转换(arithmetic conversions);隐式类型转换(implicit type conversion)/显示转换
 15. 栈类实例    //expression/
 
 ******************5 语句******************
