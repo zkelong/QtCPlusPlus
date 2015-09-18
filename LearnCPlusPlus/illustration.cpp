@@ -33,10 +33,21 @@
 11. 位操作符    //expression/bitoperator
 12. bitset操作    //expression/bitsetoperator
 13. 优先级     //expression/null--操作符具有优先级和结合性。赋值操作符是右结合的，算数操作符是左结合的。
-14. 类型转换   //expression/null--算术转换(arithmetic conversions);隐式类型转换(implicit type conversion)/显示转换
+14. 类型转换   //expression/typeconversion--算术转换(arithmetic conversions);隐式类型转换(implicit type conversion)/显示转换
 15. 栈类实例    //expression/
 
 ******************5 语句******************
+1.简单语句和复合语句 //statement/null--空语句  ;
+2.声明语句        //statement/null--声明语句(declaration statement)，对象的定义(定义语句definition)，
+3.if语句          //statement/judgment
+4.switch语句      //statement/judgment
+5.for循环语句     //statement
+6.while语句       //statement
+7.do while语句    //statement
+8.break语句      //statement
+9.continue语句   //statement
+10.goto语句      //statement
+11.链表实例      //statement
 ******************6 抽象容器类型**************+****
 
 

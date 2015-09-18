@@ -31,7 +31,11 @@ SOURCES += main.cpp \
     expression/newdeleteexpression.cpp \
     expression/bitoperator.cpp \
     expression/bitsetoperator.cpp \
-    expression/typeconversion.cpp
+    expression/typeconversion.cpp \
+    expression/stackclass.cpp \
+    statement/judgment.cpp \
+    statement/statement.cpp \
+    statement/loopstatement.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -64,5 +68,9 @@ HEADERS += \
     expression/newdeleteexpression.h \
     expression/bitoperator.h \
     expression/bitsetoperator.h \
-    expression/typeconversion.h
+    expression/typeconversion.h \
+    expression/stackclass.h \
+    statement/judgment.h \
+    statement/statement.h \
+    statement/loopstatement.h
 

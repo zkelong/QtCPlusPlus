@@ -9,6 +9,7 @@
 #include "bitoperator.h"
 #include "bitsetoperator.h"
 #include "typeconversion.h"
+#include "stackclass.h"
 
 void test_expresion()
 {
@@ -21,5 +22,6 @@ void test_expresion()
     //newdelete_expression();  //new和delete表达式
     //bit_operator_define();  //位操作符
     //bitset_operator();   //bitset操作
-    typeVersion();  //类型转换
+    //typeVersion();  //类型转换
+    test_stackclass(); //栈类实例
 }
