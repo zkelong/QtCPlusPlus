@@ -41,14 +41,53 @@
 2.声明语句        //statement/null--声明语句(declaration statement)，对象的定义(定义语句definition)，
 3.if语句          //statement/judgment
 4.switch语句      //statement/judgment
-5.for循环语句     //statement
-6.while语句       //statement
-7.do while语句    //statement
-8.break语句      //statement
-9.continue语句   //statement
-10.goto语句      //statement
+5.for循环语句     //statement/loopstatement
+6.while语句       //statement/loopstatement
+7.do while语句    //statement/loopstatement
+8.break语句      //statement/loopstatement
+9.continue语句   //statement/loopstatement
+10.goto语句      //statement/loopstatement
 11.链表实例      //statement
 ******************6 抽象容器类型**************+****
+顺序容器(sequence container)：拥有由单一类型元素组成的一个有序集合。
+关联容器(associative container)：支持查询一个元素是否存在，并可以有效地获取元素。
+1.文本查询系统
+2.vector还是list
+    //vector表示一段连续的内存区域，每个元素被顺序存储在这段内存中。
+        //对其随机访问效率高；但在任意位置，而不是在vector末尾插入/删除元素，则效率很低。
+
+    //list表示非连续的内存区域，并通过一对指向首尾的指针双向连接起来。
+        //任意位置插入、删除效率高。
+    //小型数据vector效率高于list，反之list效率高于vector。
+
+    //为提高效率，实际上vector并不是随每一个元素的插入而增长自己，而是当vector需要增长自己是，
+
+    //它实际分配的空间比当前所需的空间要多一些。这个策略是容器的增长效率更高。
+
+3.vector怎样自己增长
+   //容量指在容器下一次需要增长自己之前能够被加入到容器中的元素的总数(容量只与连续存储器有关：
+   //如vector、deque、或string。list不要求容量)。长度指容器当前拥有元素的个数。
+4.定义一个顺序容器
+5.迭代器(iterator)
+6.顺序容器操作
+7.存储文本行
+8.找到一个子串
+9.处理标点符号
+10.任意其他格式的字符串
+11.其他string操作
+12.生成文本位置map
+13.穿件单词排除集
+14.完整的程序
+15.multimap和multiset
+16.栈
+17.队列和优先级队列
+18.回顾iStack类
+
+
+
+
+
+
 
 
 

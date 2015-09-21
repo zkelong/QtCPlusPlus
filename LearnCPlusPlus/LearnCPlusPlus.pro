@@ -35,7 +35,8 @@ SOURCES += main.cpp \
     expression/stackclass.cpp \
     statement/judgment.cpp \
     statement/statement.cpp \
-    statement/loopstatement.cpp
+    statement/loopstatement.cpp \
+    abstractcontainer/abstractcontainer.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -72,5 +73,6 @@ HEADERS += \
     expression/stackclass.h \
     statement/judgment.h \
     statement/statement.h \
-    statement/loopstatement.h
+    statement/loopstatement.h \
+    abstractcontainer/abstractcontainer.h
 
