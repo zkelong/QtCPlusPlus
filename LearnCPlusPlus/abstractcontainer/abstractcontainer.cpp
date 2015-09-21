@@ -71,3 +71,52 @@ void TextQuery::filter_text()
         ++iter;
     }
 }
+
+void TextQuery::suffix_text()
+{
+    vector<string, allocator> *words = text_locations->first;
+    vector<string, allocator>::iterator iter = words->begin();
+    vecotr<string, allocator>::iterator iter_end = words->end();
+    while(iter != iter_end)
+    {
+        if((*iter).size() <=3)
+        {
+            iter++; continue;
+        }
+        if((*iter[(*iter).size()-1]) == 's')
+            suffix_s(*iter);
+        //其他后缀处理放在这里
+        iter++;
+    }
+}
+
+
+void TextQuery::suffix_s(string &word)
+{
+    string::size_type spos = 0;
+    string::size_type pos3 = word.size() - 3;
+    //"ous", "ss", "is", "ius"
+    string suffixes("oussisius");
+    if(!word.compare(pos3, 3, suffixes, spos, 3) ||
+       !word.compare(pos3, 3, suffixes, spos+6, 3) ||
+       !word.compare(pos3+1, 2, suffixes, spos+2, 2) ||
+       !word.compare(pos3+1, 2, suffixes, spos+4, 2))
+        return;
+    string ies("ies");
+    if(!word.compare(pos3, 3, ies))
+    {
+        word.replace(pos3, 3, 1, 'y');
+        return;
+    }
+    string ses("ses");
+    if(!word.compare(pos,3,ses))
+    {
+        word.erase(pos3+2);
+        return;
+    }
+    //去掉尾部的's'
+    word.erase(pos3+2);
+    //watch out for "s"
+    if(word[pos3+1] == '\'')
+        word.erase(pos3+1);
+}
