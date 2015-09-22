@@ -51,6 +51,6 @@ private:
 };
 
 
-int textQuery_test();
+void textQuery_test();
 #endif // ABSTRACTCONTAINER
 
