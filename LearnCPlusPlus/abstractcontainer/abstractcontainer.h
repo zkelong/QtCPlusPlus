@@ -14,6 +14,8 @@
 #include <stddef.h>
 #include <ctype.h>
 
+using namespace std;
+
 //typedefs使声明更简单
 typedef pair<hort, short> location;
 typedef vector<location, allocator> loc;
