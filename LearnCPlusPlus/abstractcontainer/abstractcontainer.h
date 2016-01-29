@@ -17,23 +17,23 @@
 using namespace std;
 
 //typedefs使声明更简单
-typedef pair<hort, short> location;
-typedef vector<location, allocator> loc;
-typedef vector<string, allocator> text;
-typedef pair<text*, loc*> text_loc;
+typedef pair<short, short> location;
+//typedef vector<location, allocator> loc;
+//typedef vector<string, allocator> text;
+//typedef pair<text*, loc*> text_loc;
 
 class TextQuery
 {
    public:
-    TextQuery() {memset(this, 0, sizeof(TextQuery));}
+//    TextQuery() {memset(this, 0, sizeof(TextQuery));}
     static void filter_elements(string felems) {filt_elems = felems;}
     void query_text();
-    void display_map_text();
-    void display_map_text();
+//    void display_map_text();
+//    void display_map_text();
     void display_text_loacations();
     void doit() {
         retrieve_text();
-        separete_words();
+//        separete_words();
         filter_text();
         build_word_map();
     }
@@ -46,9 +46,9 @@ private:
     void suffix_s(string&);
     void build_word_map();
 private:
-    vector<string, allocator> *lines_of_text;
-    text_loc *text_locations;
-    map<string, loc*, less<string>, allocator> *word_map;
+//    vector<string, allocator> *lines_of_text;
+//    text_loc *text_locations;
+//    map<string, loc*, less<string>, allocator> *word_map;
     static string filt_elems;
 };
 

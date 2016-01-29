@@ -2,15 +2,18 @@
 #include "expression/expression.h"
 #include "statement/statement.h"
 #include "abstractcontainer/abstractcontainer.h"
-#include "container/container.h"
+//#include "container/container.h"
 
 int main()
 {
     //test_basic_data_types();  //基本数据类型
     //test_expresion();    //表达式
     //statement();    //语句
-    textQuery_test(); //抽象容器类型
+    //textQuery_test(); //抽象容器类型
     //
+    int a = 4;
+    a = a >> 2;
+    printf("%d", a);
 
     return 0;
 }
