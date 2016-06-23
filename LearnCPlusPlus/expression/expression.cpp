@@ -13,15 +13,15 @@
 
 void test_expresion()
 {
-    //what_is_expression();  //ä»€ä¹ˆæ˜¯è¡¨è¾¾å¼
-    //arithmetic_operator();   //ç®—æœ¯æ“ä½œç¬¦
-    //logical_operators();   //ç­‰äºã€å…³ç³»å’Œé€»è¾‘æ“ä½œç¬¦
-    //assignment_operator();  //èµ‹å€¼æ“ä½œ
-    //complexnumber_operator();  //å¤æ•°æ“ä½œ
-    //sizeof_operator();  //sizeofæ“ä½œç¬¦
-    //newdelete_expression();  //newå’Œdeleteè¡¨è¾¾å¼
-    //bit_operator_define();  //ä½æ“ä½œç¬¦
-    //bitset_operator();   //bitsetæ“ä½œ
-    //typeVersion();  //ç±»å‹è½¬æ¢
-    test_stackclass(); //æ ˆç±»å®ä¾‹
+    //what_is_expression();  //Ê²Ã´ÊÇ±í´ïÊ½
+    //arithmetic_operator();   //ËãÊõ²Ù×÷·û
+    //logical_operators();   //µÈÓÚ¡¢¹ØÏµºÍÂß¼­²Ù×÷·û
+    //assignment_operator();  //¸³Öµ²Ù×÷
+    //complexnumber_operator();  //¸´Êı²Ù×÷
+    //sizeof_operator();  //sizeof²Ù×÷·û
+    //newdelete_expression();  //newºÍdelete±í´ïÊ½
+    //bit_operator_define();  //Î»²Ù×÷·û
+    //bitset_operator();   //bitset²Ù×÷
+    //typeVersion();  //ÀàĞÍ×ª»»
+    test_stackclass(); //Õ»ÀàÊµÀı
 }

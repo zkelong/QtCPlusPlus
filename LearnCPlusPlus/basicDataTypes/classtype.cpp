@@ -1,13 +1,13 @@
 #include "classtype.h"
 
-//ç¼ºçœæ„é€ å‡½æ•°--ä¸éœ€è¦ä»»ä½•æ˜¾ç¤ºçš„åˆå§‹å€¼
+//È±Ê¡¹¹Ôìº¯Êı--²»ĞèÒªÈÎºÎÏÔÊ¾µÄ³õÊ¼Öµ
 classtype::classtype()
 {
 
 }
 
-/*æˆå‘˜å‡½æ•°(member functjion)æˆ–æ–¹æ³•(method)ï¼Œå®ƒä»¬å®šä¹‰äº†ç±»çš„å…¬æœ‰æ¥å£(public interface)
-æ‹·è´æ„é€ å‡½æ•°(copy constructor) String(const String&)
-é‡è½½æ“ä½œç¬¦
+/*³ÉÔ±º¯Êı(member functjion)»ò·½·¨(method)£¬ËüÃÇ¶¨ÒåÁËÀàµÄ¹«ÓĞ½Ó¿Ú(public interface)
+¿½±´¹¹Ôìº¯Êı(copy constructor) String(const String&)
+ÖØÔØ²Ù×÷·û
 */
 

@@ -17,7 +17,6 @@ SOURCES += main.cpp \
     basicDataTypes/arraytype.cpp \
     basicDataTypes/vectortype.cpp \
     basicDataTypes/complexnumbertype.cpp \
-    basicDataTypes/typedefkeywords.cpp \
     basicDataTypes/volatilekeywords.cpp \
     basicDataTypes/pairtype.cpp \
     basicDataTypes/classtype.cpp \
@@ -36,10 +35,14 @@ SOURCES += main.cpp \
     statement/judgment.cpp \
     statement/statement.cpp \
     statement/loopstatement.cpp \
-    abstractcontainer/abstractcontainer.cpp
+    abstractcontainer/abstractcontainer.cpp \
+    keywords/keywords.cpp \
+    keywords/typedefkeywords.cpp \
+    keywords/c++keywords.cpp \
+    keywords/ckeywords.cpp
 
-include(deployment.pri)
-qtcAddDeployment()
+#include(deployment.pri)
+#qtcAddDeployment()
 
 HEADERS += \
     mainhead.h \
@@ -55,7 +58,6 @@ HEADERS += \
     basicDataTypes/arraytype.h \
     basicDataTypes/vectortype.h \
     basicDataTypes/complexnumbertype.h \
-    typedefkeywords.h \
     basicDataTypes/volatilekeywords.h \
     basicDataTypes/pairtype.h \
     basicDataTypes/classtype.h \
@@ -74,5 +76,9 @@ HEADERS += \
     statement/judgment.h \
     statement/statement.h \
     statement/loopstatement.h \
-    abstractcontainer/abstractcontainer.h
+    abstractcontainer/abstractcontainer.h \
+    keywords/keywords.h \
+    keywords/typedefkeywords.h \
+    keywords/c++keywords.h \
+    keywords/ckeywords.h
 

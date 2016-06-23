@@ -1,29 +1,33 @@
 #include "literalconstants.h"
-#include <limits>  //å®šä¹‰å„ç§æ•°æ®ç±»å‹æœ€å€¼å¸¸é‡
+#include <limits>  //¶¨Òå¸÷ÖÖÊı¾İÀàĞÍ×îÖµ³£Á¿
 
 
 /*
-æ–‡å­—å¸¸é‡(literal constant): å€¼ä¸èƒ½æ”¹å˜ï¼›ä¸å¯å¯»å€(nonaddressable)
-1. æ•´å€¼ç±»å‹(integral type)ï¼šchar, short, int, long
-       æœ‰æ— ç¬¦å·: unsigned
+ÎÄ×Ö³£Á¿(literal constant): Öµ²»ÄÜ¸Ä±ä£»²»¿ÉÑ°Ö·(nonaddressable)
+1. ÕûÖµÀàĞÍ(integral type)£ºchar, short, int, long
+       ÓĞÎŞ·ûºÅ: unsigned
 
 
 */
 
 void integral_type()
 {
+    //×î´ó³£Êı
     unsigned int maxInt = INT_MAX;
-    std::cout << maxInt << std::endl;
+    std::cout << "#include<limits>¶¨Òå¸÷ÖÖÊı¾İÀàĞÍ×îÖµ³£Á¿£º\n\tINT_MAX = " << maxInt << std::endl;
 
-    //å…«è¿›åˆ¶
+    //°Ë½øÖÆ
     int eight_int = 024;
-    //åå…­è¿›åˆ¶
+    //Ê®Áù½øÖÆ
     int sixteen_int = 0x14;
 
-    std::cout << eight_int << "\t" << sixteen_int << std::endl;
+    std::cout << "°Ë½øÖÆ(024): " << eight_int << "\tÊ®Áù½øÖÆ(0x14): " << sixteen_int << std::endl;
 
-    //è½¬ä¹‰å­—ç¬¦
-    std::cout << "123\n456" << "789\14987" << std::endl;
+    //×ªÒå×Ö·û
+    std::cout << "×ªÒå×Ö·û\"123\\n466\": " << "123\n456" << "\n×ªÒå×Ö·û\"789\\14987\": " << "789\14987" << std::endl;
 
-    //å®½å­—ç¬¦ï¼šL'a'   L"a wide string literal"
+    std::cout << "×Ö·û´®³£Á¿´«²Î¸øÊı×é<ÁĞ£ºfun(\"123\")>£¬\n\tÕâÀï´«µİµÄÊÇ³£Á¿×Ö·û´®µØÖ·£¬\n\t¼´ÊÇ£ºconst char *s"
+              << std::endl;
+
+    //¿í×Ö·û£ºL'a'   L"a wide string literal"
 }

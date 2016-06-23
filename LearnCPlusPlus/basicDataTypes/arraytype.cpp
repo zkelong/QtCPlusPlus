@@ -15,7 +15,7 @@ void array_type()
 void array_define()
 {
     int ia[10];
-    int ival = ia[1];  //ç´¢å¼•è®¿é—®(indexing)æˆ–ä¸‹æ ‡è®¿é—®(subscripting)
+    int ival = ia[1];  //Ë÷Òı·ÃÎÊ(indexing)»òÏÂ±ê·ÃÎÊ(subscripting)
     std::cout << "ival: " << ival << std::endl;
 
     for(int i = 0; i < 10; i++)
@@ -24,7 +24,7 @@ void array_define()
     }
     std::cout << std::endl;
 
-    //äºŒç»´æ•°ç»„
+    //¶şÎ¬Êı×é
     int ib[10][10];
     for(int i = 0; i < 10; i++)
     {
@@ -36,11 +36,11 @@ void array_define()
     }
 }
 
-//ä¸€ä¸ªæ•°ç»„ä¸èƒ½è¢«å¦å¤–ä¸€ä¸ªæ•°ç»„åˆå§‹åŒ–ï¼Œä¹Ÿä¸èƒ½è¢«èµ‹å€¼ç»™å¦å¤–ä¸€ä¸ªæ•°ç»„ã€‚
-//æ³¨æ„æ•°ç»„è¶Šç•Œ
+//Ò»¸öÊı×é²»ÄÜ±»ÁíÍâÒ»¸öÊı×é³õÊ¼»¯£¬Ò²²»ÄÜ±»¸³Öµ¸øÁíÍâÒ»¸öÊı×é¡£
+//×¢ÒâÊı×éÔ½½ç
 
-//æ³›å‹ç¨‹åºè®¾è®¡(generic programming)
-template <typename elemType> //è¦åœ¨ä½¿ç”¨çš„ä¸Šä¸€è¡Œå†™è¿™ä¸ªå®šä¹‰
+//·ºĞÍ³ÌĞòÉè¼Æ(generic programming)
+template <typename elemType> //ÒªÔÚÊ¹ÓÃµÄÉÏÒ»ĞĞĞ´Õâ¸ö¶¨Òå
 void print(elemType *pbegin, elemType *pend)
 {
     while(pbegin != pend)

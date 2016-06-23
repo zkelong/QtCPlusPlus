@@ -14,9 +14,9 @@ void test_stackclass()
     stc.display();
 }
 
-/*把元素存储在一个int型的vector中，名字为_stack。
-_top含有下一个可用槽的值，push()操作会向该槽压入一个值。
-_top的当前值反映了栈中元素的个数。
+/*��Ԫ�ش洢��һ��int�͵�vector�У�����Ϊ_stack��
+_top������һ�����ò۵�ֵ��push()��������ò�ѹ��һ��ֵ��
+_top�ĵ�ǰֵ��ӳ��ջ��Ԫ�صĸ�����
 */
 inline int stackclass::size()
 {
@@ -68,8 +68,8 @@ void stackclass::display()
 }
 
 /*
-栈--基本数据抽象，允许后进先出(LIFO)的顺序嵌入和获取其中的值。
-    两个基本操作：push, popen
-    其他操作：查询栈是否满full()或空enmpty()，以及判断栈的长度size()
+ջ--�������ݳ�����������ȳ�(LIFO)��˳��Ƕ��ͻ�ȡ���е�ֵ��
+    ��������������push, popen
+    ������������ѯջ�Ƿ���full()���enmpty()���Լ��ж�ջ�ĳ���size()
 
 */

@@ -7,10 +7,10 @@ void what_is_expression()
 
 void expression_define()
 {
-    //æœ€ç®€å•çš„è¡¨è¾¾å¼ç”±ä¸€ä¸ªæ–‡å­—å¸¸é‡æˆ–ä¸€ä¸ªå¯¹è±¡æž„æˆ
-    3.1415926; //ç»“æžœæ˜¯3.1415926
-    "melancholia";  //ç»“æžœæ˜¯å­—ç¬¦ä¸²ç¬¬ä¸€ä¸ªå…ƒç´ çš„å†…å­˜åœ°å€ï¼Œå®ƒçš„ç±»åž‹æ˜¯const char*
-    //upperBound;   //ç»“æžœæ˜¯ä¸Žå…¶ç›¸å…³è”çš„å€¼ï¼Œç±»åž‹ç”±å®ƒçš„å®šä¹‰æ¥å†³å®š
+    //×î¼òµ¥µÄ±í´ïÊ½ÓÉÒ»¸öÎÄ×Ö³£Á¿»òÒ»¸ö¶ÔÏó¹¹³É
+    3.1415926; //½á¹ûÊÇ3.1415926
+    "melancholia";  //½á¹ûÊÇ×Ö·û´®µÚÒ»¸öÔªËØµÄÄÚ´æµØÖ·£¬ËüµÄÀàÐÍÊÇconst char*
+    //upperBound;   //½á¹ûÊÇÓëÆäÏà¹ØÁªµÄÖµ£¬ÀàÐÍÓÉËüµÄ¶¨ÒåÀ´¾ö¶¨
     2 + 4;
     int *p = new int(10);
     p != 0 && *p != 0;
@@ -19,10 +19,10 @@ void expression_define()
 }
 
 /*
-è¡¨è¾¾æ˜¯ç”±ä¸€ä¸ªæˆ–å¤šä¸ªæ“ä½œæ•°æž„æˆ
-æ“ä½œæ•°(operator)
-ä¸€å…ƒæ“ä½œç¬¦(unary operator)ï¼Œå¦‚å–åœ°å€æ“ä½œç¬¦(&)å’Œè§£å¼•ç”¨æ“ä½œä»˜(*)
-äºŒå…ƒæ“ä½œç¬¦(binary operator)ï¼Œå¦‚åŠ æ³•æ“ä½œç¬¦ã€å‡æ³•æ“ä½œç¬¦
-ç¬¦åˆè¡¨è¾¾å¼(compound expression)ï¼šå½“ä¸¤ä¸ªæˆ–ä¸¤ä¸ªä»¥ä¸Šçš„æ“ä½œä»˜è¢«ç»„åˆèµ·æ¥çš„æ—¶å€™
-å­è¡¨è¾¾å¼çš„è®¡ç®—é¡ºåºç”±æ“ä½œç¬¦çš„ä¼˜å…ˆçº§(precedence)å’Œç»“åˆæ€§(associativity)æ¥å†³å®š
+±í´ïÊÇÓÉÒ»¸ö»ò¶à¸ö²Ù×÷Êý¹¹³É
+²Ù×÷Êý(operator)
+Ò»Ôª²Ù×÷·û(unary operator)£¬ÈçÈ¡µØÖ·²Ù×÷·û(&)ºÍ½âÒýÓÃ²Ù×÷¸¶(*)
+¶þÔª²Ù×÷·û(binary operator)£¬Èç¼Ó·¨²Ù×÷·û¡¢¼õ·¨²Ù×÷·û
+·ûºÏ±í´ïÊ½(compound expression)£ºµ±Á½¸ö»òÁ½¸öÒÔÉÏµÄ²Ù×÷¸¶±»×éºÏÆðÀ´µÄÊ±ºò
+×Ó±í´ïÊ½µÄ¼ÆËãË³ÐòÓÉ²Ù×÷·ûµÄÓÅÏÈ¼¶(precedence)ºÍ½áºÏÐÔ(associativity)À´¾ö¶¨
 */

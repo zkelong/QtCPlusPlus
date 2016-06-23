@@ -3,11 +3,11 @@
 
 #include <iostream>
 
-/**å…¥å£**/
+/**Èë¿Ú**/
 void varable_type();
 
 
-/**æµ‹è¯•å‡½æ•°**/
+/**²âÊÔº¯Êı**/
 void varable_define();
 
 #endif // VARIABLE

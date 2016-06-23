@@ -9,23 +9,93 @@
 #include "arraytype.h"
 #include "vectortype.h"
 #include "complexnumbertype.h"
-#include "typedefkeywords.h"
 #include "volatilekeywords.h"
 #include "pairtype.h"
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
 
 void test_basic_data_types()
 {
-    //integral_type(); //æ–‡å­—å¸¸é‡
-    //varable_type();  //å˜é‡
-    //pointer_type();  //æŒ‡é’ˆç±»å‹
-    //string_type();   //å­—ç¬¦ä¸²ç±»å‹
-    //const_keywords(); //consté™å®šä¿®é¥°ç¬¦
-    //reference_type(); //å¼•ç”¨ç±»å‹
-    //bool_type();  //å¸ƒå°”ç±»å‹
-    //array_type();  //æ•°ç»„ç±»å‹
-    //vector_type();   //vectorç±»å‹
-    //complexnumber_type();  //è™šæ•°ç±»å‹
-    //typedef_type();       //typedefåå­—
-    //volatile_type();   //volatileé™å®šä¿®é¥°ç¬¦
-    //pair_type();      //pairç±»å‹
+    bool quit(false);
+    int mId;
+    while(1) {
+        system("cls");  //ÇåÆÁ¿ØÖÆÌ¨
+        cin.clear(); //Çå³ıstd::cinµÄ´íÎó×´Ì¬
+        cin.sync();  //Çå¿ÕÊäÈë»º³åÇø
+
+        cout << "»ù±¾Êı¾İÀàĞÍ: " << endl;
+        cout << "1.ÎÄ×Ö³£Á¿" << endl;
+        cout << "2.±äÁ¿" << endl;
+        cout << "3.Ö¸ÕëÀàĞÍ" << endl;
+        cout << "4.×Ö·û´®ÀàĞÍ" << endl;
+        cout << "5.constÏŞ¶¨ĞŞÊÎ·û" << endl;
+        cout << "6.ÒıÓÃÀàĞÍ" << endl;
+        cout << "7.²¼¶ûÀàĞÍ" << endl;
+        cout << "8.Êı×éÀàĞÍ" << endl;
+        cout << "9.vectorÀàĞÍ" << endl;
+        cout << "10.ĞéÊıÀàĞÍ" << endl;
+        cout << "11.typedefÃû×Ö" << endl;
+        cout << "12.volatileÏŞ¶¨ĞŞÊÎ·û" << endl;
+        cout << "13.pairÀàĞÍ" << endl;
+        cout << "0.ÍË³ö" << endl;
+        while(cout << "ÊäÈëÑ¡Ïî½øÈë£º", cin >> mId, !(mId >= 0 && mId < 13) || cin.fail()) {
+            cout << "Öµ²»¶Ô!" << endl;
+            cin.clear(); //Çå³ıstd::cinµÄ´íÎó×´Ì¬
+            cin.sync();  //Çå¿ÕÊäÈë»º³åÇø
+        }
+        if(mId != 0)
+            system("cls");  //ÇåÆÁ¿ØÖÆÌ¨
+        switch (mId) {
+        case 1:
+            integral_type(); //ÎÄ×Ö³£Á¿
+            break;
+        case 2:
+            varable_type();  //±äÁ¿
+            break;
+        case 3:
+            pointer_type();  //Ö¸ÕëÀàĞÍ
+            break;
+        case 4:
+            string_type();   //×Ö·û´®ÀàĞÍ
+            break;
+        case 5:
+            const_keywords(); //constÏŞ¶¨ĞŞÊÎ·û
+            break;
+        case 6:
+            reference_type(); //ÒıÓÃÀàĞÍ
+            break;
+        case 7:
+            bool_type();  //²¼¶ûÀàĞÍ
+            break;
+        case 8:
+            array_type();  //Êı×éÀàĞÍ
+            break;
+        case 9:
+            vector_type();   //vectorÀàĞÍ
+            break;
+        case 10:
+            complexnumber_type();  //ĞéÊıÀàĞÍ
+            break;
+        case 11:
+            typedef_type();       //typedefÃû×Ö
+            break;
+        case 12:
+            volatile_type();   //volatileÏŞ¶¨ĞŞÊÎ·û
+            break;
+        case 13:
+            pair_type();      //pairÀàĞÍ
+            break;
+        case 0:
+            quit = true;
+            break;
+        default:
+            break;
+        }
+        getch(); //ÔÚwindowsÆ½Ì¨ÏÂ´Ó¿ØÖÆÌ¨ÎŞ»ØÏÔµØÈ¡Ò»¸ö×Ö·û£¬ÔÚlinuxÏÂÊÇÓĞ»ØÏÔµÄ¡£--Í·ÎÄ¼ş#include <conio.h>
+        if(quit) {
+            break;
+        }
+    }
 }

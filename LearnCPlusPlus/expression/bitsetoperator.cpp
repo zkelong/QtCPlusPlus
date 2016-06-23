@@ -8,16 +8,16 @@ void bitset_operator()
 
 void bitset_operator_define()
 {
-    std::bitset<32> bitvec;  //ç¼ºçœæƒ…å†µä¸‹ï¼Œæ‰€æœ‰ä½éƒ½è¢«åˆå§‹åŒ–0
+    std::bitset<32> bitvec;  //È±Ê¡Çé¿öÏÂ£¬ËùÓĞÎ»¶¼±»³õÊ¼»¯0
     std::cout << "bitvec: " << bitvec << std::endl;
     bitvec.any();
     std::cout << "bitvec.any()\t" << bitvec.test(1) << std::endl;
-    //ç¿»è½¬
+    //·­×ª
     bitvec.flip(0);
-    std::cout << "ç¿»è½¬\nbitvec: " << bitvec << std::endl;
+    std::cout << "·­×ª\nbitvec: " << bitvec << std::endl;
     bitvec[1].flip();
     std::cout << "bitvec: " << bitvec << std::endl;
-    //åˆå§‹åŒ–
+    //³õÊ¼»¯
     std::bitset<32> bitvec2(0xfff);
     std::cout << "bitset<32> bitvec2(oxfff)\t" << bitvec2 << std::endl;
     std::bitset<32> bitvec3(012);
@@ -26,28 +26,28 @@ void bitset_operator_define()
     std::bitset<32> bitvec4(bitval);
     std::cout << "std::bitset<32> bitvec4(bitval)\t" << bitvec4 << std::endl;
     std::string bitval1("111111111111111000000000111");
-    std::bitset<32> bitvec5(bitval1, 6, 6); //ä»å­—ç¬¦ä¸²ç¬¬6ä½(0ä½)å¼€å§‹å–ï¼Œå–é•¿åº¦ä¸º6
+    std::bitset<32> bitvec5(bitval1, 6, 6); //´Ó×Ö·û´®µÚ6Î»(0Î»)¿ªÊ¼È¡£¬È¡³¤¶ÈÎª6
     std::cout << "std::bitset<32> bitvec5(bitval1, 6, 6)\t" << bitvec5 << std::endl;
-    std::bitset<32> bitvec6(bitval1, 6); //ä»6ä½(0ä½)ä¸€ç›´å–åˆ°æœ«å°¾
+    std::bitset<32> bitvec6(bitval1, 6); //´Ó6Î»(0Î»)Ò»Ö±È¡µ½Ä©Î²
     std::cout << "std::bitset<32> bitvec6(bitval1, 6)\t" << bitvec6 << std::endl;
-    //è½¬æ¢ä¸ºå­—ç¬¦ä¸²ï¼Œè½¬æ¢ä¸ºunsigned long
+    //×ª»»Îª×Ö·û´®£¬×ª»»Îªunsigned long
     std::cout << bitvec5.to_string() << std::endl;
     std::cout << bitvec5.to_ulong() << std::endl;
 }
 
 
 /*
-test(pos)   posä½æ˜¯å¦ä¸º1
-any()       ä»»æ„ä½æ˜¯å¦ä¸º1
-none()      æ˜¯å¦æ²¡æœ‰ä½ä¸º1
-count()     å€¼æ˜¯1çš„ä½çš„ä¸ªæ•°
-size()      ä½å…ƒç´ çš„ä¸ªæ•°
-[pos]       è®¿é—®posä½
-flip()      ç¿»è½¬æ‰€æœ‰ä½
-flip(pos)   ç¿»è½¬posä½
-set()       å°†æ‰€æœ‰ä½ç½®1
-set(pos)    å°†posä½ç½®1
-reset()     å°†æ‰€æœ‰ä½ç½®0
-reset(pos)  å°†æ‰€æœ‰ä½ç½®0
---ä½¿ç”¨æ–¹æ³•ä¸ºa.exp(),a[index]
+test(pos)   posÎ»ÊÇ·ñÎª1
+any()       ÈÎÒâÎ»ÊÇ·ñÎª1
+none()      ÊÇ·ñÃ»ÓĞÎ»Îª1
+count()     ÖµÊÇ1µÄÎ»µÄ¸öÊı
+size()      Î»ÔªËØµÄ¸öÊı
+[pos]       ·ÃÎÊposÎ»
+flip()      ·­×ªËùÓĞÎ»
+flip(pos)   ·­×ªposÎ»
+set()       ½«ËùÓĞÎ»ÖÃ1
+set(pos)    ½«posÎ»ÖÃ1
+reset()     ½«ËùÓĞÎ»ÖÃ0
+reset(pos)  ½«ËùÓĞÎ»ÖÃ0
+--Ê¹ÓÃ·½·¨Îªa.exp(),a[index]
 */

@@ -3,17 +3,66 @@
 #include "statement/statement.h"
 #include "abstractcontainer/abstractcontainer.h"
 //#include "container/container.h"
+#include "keywords/ckeywords.h"
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 int main()
 {
-    //test_basic_data_types();  //åŸºæœ¬æ•°æ®ç±»å‹
-    //test_expresion();    //è¡¨è¾¾å¼
-    //statement();    //è¯­å¥
-    //textQuery_test(); //æŠ½è±¡å®¹å™¨ç±»å‹
-    //
-    int a = 4;
-    a = a >> 2;
-    printf("%d", a);
+    int mId;
+
+    while(1) {
+        system("cls");  //ÇåÆÁ¿ØÖÆÌ¨
+        cin.clear(); //Çå³ıstd::cinµÄ´íÎó×´Ì¬
+        cin.sync();  //Çå¿ÕÊäÈë»º³åÇø
+
+        cout << "main: " << endl;
+        cout << "1.»ù±¾Êı¾İÀàĞÍ" << endl;
+        cout << "2.±í´ïÊ½" << endl;
+        cout << "3.Óï¾ä" << endl;
+        cout << "4.³éÏóÈİÆ÷ÀàĞÍ" << endl;
+        cout << "98.C¹Ø¼ü×Ö" << endl;
+        cout << "99.C++¹Ø¼ü×Ö" << endl;
+        cout << "0.ÍË³ö" << endl;
+        while(cout << "ÊäÈëÑ¡Ïî½øÈë£º", cin >> mId, !((mId >= 0 && mId < 5) || (mId >=98 && mId <= 99)) || cin.fail()) {
+            cout << "Öµ²»¶Ô!" << endl;
+            cin.clear(); //Çå³ıstd::cinµÄ´íÎó×´Ì¬
+            cin.sync();  //Çå¿ÕÊäÈë»º³åÇø
+        }
+        if(mId != 0)
+            system("cls");  //ÇåÆÁ¿ØÖÆÌ¨
+        switch (mId) {
+        case 1:
+            test_basic_data_types();  //»ù±¾Êı¾İÀàĞÍ
+            break;
+        case 2:
+            test_expresion();    //±í´ïÊ½
+            break;
+        case 3:
+            statement();    //Óï¾ä
+            break;
+        case 4:
+//            textQuery_test(); //³éÏóÈİÆ÷ÀàĞÍ
+            break;
+        case 98:
+            ckeywords();
+            break;
+        case 99:
+            break;
+        case 0:
+            exit(0);
+            break;
+        default:
+            break;
+        }
+    }
+
+
+//    int a = 4;
+//    a = a >> 2;
+//    printf("%d", a);
 
     return 0;
 }

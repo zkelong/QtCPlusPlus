@@ -28,8 +28,8 @@ void vector_define()
     }
     std::cout << std::endl;
 
-    //æ˜¾ç¤ºçš„åˆå§‹å€¼æ¥åˆå§‹åŒ–
-    std::vector<int> vec1(10, -1); //é•¿åº¦ä¸º10ï¼Œåˆå§‹åŒ–ä¸º-1
+    //ÏÔÊ¾µÄ³õÊ¼ÖµÀ´³õÊ¼»¯
+    std::vector<int> vec1(10, -1); //³¤¶ÈÎª10£¬³õÊ¼»¯Îª-1
     if(!vec1.empty())
     {
         for(int i = 0; i < vec1.size(); i++)
@@ -37,9 +37,9 @@ void vector_define()
         std::cout << std::endl;
     }
 
-    //ç”¨æ•°ç»„æ¥åˆå§‹åŒ–
+    //ÓÃÊı×éÀ´³õÊ¼»¯
     int ia1[6] = {-2, -1, 0, 1, 2, 1024};
-    std::vector<int> ivec2(ia1, ia1+6); //æŠŠia1çš„6ä¸ªå…ƒç´ åˆ°ivec2ä¸­
+    std::vector<int> ivec2(ia1, ia1+6); //°Ñia1µÄ6¸öÔªËØµ½ivec2ÖĞ
     if(!ivec2.empty())
     {
         for(int i = 0; i < ivec2.size(); i++)
@@ -48,14 +48,14 @@ void vector_define()
         }
         std::cout << std::endl;
     }
-    //vectorç›¸äº’èµ‹å€¼
+    //vectorÏà»¥¸³Öµ
     std::vector<int> ivec3 = ivec2;
     std::cout << ivec3.size() << std::endl;
 }
 
 void vector_operator()
 {
-    std::vector<std::string> svec; //ç©ºçš„vector
+    std::vector<std::string> svec; //¿ÕµÄvector
     std::string word;
     std::cout <<"use \'*\' end input operator: " << std::endl;
     while(std::cin >> word)
@@ -70,7 +70,7 @@ void vector_operator()
     }
     std::cout << std::endl;
 
-    //è¿­ä»£å™¨(iterator)æ“ä½œ
+    //µü´úÆ÷(iterator)²Ù×÷
     std::cout << "iterator operator: " << std::endl;
     for(std::vector<std::string>::iterator it = svec.begin();
         it != svec.end(); it++)

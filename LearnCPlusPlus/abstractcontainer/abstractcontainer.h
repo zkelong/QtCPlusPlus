@@ -1,22 +1,22 @@
 #ifndef ABSTRACTCONTAINER
 #define ABSTRACTCONTAINER
 
-//æ ‡å‡†åº“å¤´æ–‡ä»¶
+//±ê×¼¿âÍ·ÎÄ¼ş
 #include <algorithm>
 #include <string>
 #include <vector>
 #include <utility>
 #include <map>
 #include <set>
-//æ ‡å‡†C++ä¹‹å‰çš„iostreamå¤´æ–‡ä»¶
+//±ê×¼C++Ö®Ç°µÄiostreamÍ·ÎÄ¼ş
 #include <fstream>
-//æ ‡å‡†Cå¤´æ–‡ä»¶
+//±ê×¼CÍ·ÎÄ¼ş
 #include <stddef.h>
 #include <ctype.h>
 
 using namespace std;
 
-//typedefsä½¿å£°æ˜æ›´ç®€å•
+//typedefsÊ¹ÉùÃ÷¸ü¼òµ¥
 typedef pair<short, short> location;
 //typedef vector<location, allocator> loc;
 //typedef vector<string, allocator> text;

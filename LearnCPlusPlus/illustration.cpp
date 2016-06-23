@@ -1,207 +1,207 @@
 /*******************************************************************************************
 
-------------------------C++ä»Žå…¥é—¨åˆ°ç²¾é€š------------------------
+------------------------C++´ÓÈëÃÅµ½¾«Í¨------------------------
 
-******************3 C++åŸºæœ¬æ•°æ®ç±»åž‹******************
-1. æ–‡å­—å¸¸é‡  //basicDataTypes/literalConstants
-2. å˜é‡     //basicDataTypes/variable
-3. æŒ‡é’ˆç±»åž‹  //basicDataTypes/pointer
-4. å­—ç¬¦ä¸²ç±»åž‹  //basicDataTypes/stringtype
-5. consté™å®šä¿®é¥°ç¬¦ //basicDataTypes/constkeywords
-6. å¼•ç”¨ç±»åž‹     //basicDataTypes/referencetype
-7. å¸ƒå°”ç±»åž‹     //basicDataTypes/booltype
-8. æžšä¸¾ç±»åž‹éš¾æ”¹  //basicDataTypes/enumerationtype
-9. æ•°ç»„ç±»åž‹     //basicDataTypes/arraytype
-10. vectorå®¹å™¨ç±»åž‹      //basicDataTypes/vectorytype
-11. å¤æ•°ç±»åž‹            //basicDataTypes/complexnumbertype
-12. typedefåå­—       //basicDataTypes/typedefkeywords
-13. volatitleé™å®šä¿®é¥°ç¬¦      //basicDataTypes/volatitlekeywords
-14. pairç±»åž‹          //basicDataTypes/pairtype
-15. ç±»ç±»åž‹             //basicDataTypes/classtype
+******************3 C++»ù±¾Êý¾ÝÀàÐÍ******************
+1. ÎÄ×Ö³£Á¿  //basicDataTypes/literalConstants
+2. ±äÁ¿     //basicDataTypes/variable
+3. Ö¸ÕëÀàÐÍ  //basicDataTypes/pointer
+4. ×Ö·û´®ÀàÐÍ  //basicDataTypes/stringtype
+5. constÏÞ¶¨ÐÞÊÎ·û //basicDataTypes/constkeywords
+6. ÒýÓÃÀàÐÍ     //basicDataTypes/referencetype
+7. ²¼¶ûÀàÐÍ     //basicDataTypes/booltype
+8. Ã¶¾ÙÀàÐÍÄÑ¸Ä  //basicDataTypes/enumerationtype
+9. Êý×éÀàÐÍ     //basicDataTypes/arraytype
+10. vectorÈÝÆ÷ÀàÐÍ      //basicDataTypes/vectorytype
+11. ¸´ÊýÀàÐÍ            //basicDataTypes/complexnumbertype
+12. typedefÃû×Ö       //basicDataTypes/typedefkeywords
+13. volatitleÏÞ¶¨ÐÞÊÎ·û      //basicDataTypes/volatitlekeywords
+14. pairÀàÐÍ          //basicDataTypes/pairtype
+15. ÀàÀàÐÍ             //basicDataTypes/classtype
 
-******************4 è¡¨è¾¾å¼******************
-1. ä»€ä¹ˆæ˜¯è¡¨è¾¾å¼    //expression/whatsexpression
-2. ç®—æœ¯æ“ä½œç¬¦        //expression/arithmeticoperator
-3. ç­‰äºŽã€å…³ç³»å’Œé€»è¾‘æ“ä½œç¬¦    //expression/logicaloperator
-4. èµ‹å€¼æ“ä½œç¬¦        //expression/assinmentoperator
-5. é€’å¢žå’Œé€’å‡æ“ä½œç¬¦     //expression/null
-6. å¤æ•°æ“ä½œç¬¦        //expression/complexnumberoperator
-7. æ¡ä»¶æ“ä½œç¬¦        //expression/null--expr1 ? expr2 : expr3
-8. sizeofæ“ä½œç¬¦        //expression/szieofoperator
-9. newå’Œdeleteè¡¨è¾¾å¼    //expression/newdeleteexpression
-10. é€—å·æ“ä½œç¬¦       //expression/null int ival = (ia != 0) ? ix = get_value(), ia[index] = ix : ia[sz] = ix, ia[index] = 0;
-11. ä½æ“ä½œç¬¦    //expression/bitoperator
-12. bitsetæ“ä½œ    //expression/bitsetoperator
-13. ä¼˜å…ˆçº§     //expression/null--æ“ä½œç¬¦å…·æœ‰ä¼˜å…ˆçº§å’Œç»“åˆæ€§ã€‚èµ‹å€¼æ“ä½œç¬¦æ˜¯å³ç»“åˆçš„ï¼Œç®—æ•°æ“ä½œç¬¦æ˜¯å·¦ç»“åˆçš„ã€‚
-14. ç±»åž‹è½¬æ¢   //expression/typeconversion--ç®—æœ¯è½¬æ¢(arithmetic conversions);éšå¼ç±»åž‹è½¬æ¢(implicit type conversion)/æ˜¾ç¤ºè½¬æ¢
-15. æ ˆç±»å®žä¾‹    //expression/
+******************4 ±í´ïÊ½******************
+1. Ê²Ã´ÊÇ±í´ïÊ½    //expression/whatsexpression
+2. ËãÊõ²Ù×÷·û        //expression/arithmeticoperator
+3. µÈÓÚ¡¢¹ØÏµºÍÂß¼­²Ù×÷·û    //expression/logicaloperator
+4. ¸³Öµ²Ù×÷·û        //expression/assinmentoperator
+5. µÝÔöºÍµÝ¼õ²Ù×÷·û     //expression/null
+6. ¸´Êý²Ù×÷·û        //expression/complexnumberoperator
+7. Ìõ¼þ²Ù×÷·û        //expression/null--expr1 ? expr2 : expr3
+8. sizeof²Ù×÷·û        //expression/szieofoperator
+9. newºÍdelete±í´ïÊ½    //expression/newdeleteexpression
+10. ¶ººÅ²Ù×÷·û       //expression/null int ival = (ia != 0) ? ix = get_value(), ia[index] = ix : ia[sz] = ix, ia[index] = 0;
+11. Î»²Ù×÷·û    //expression/bitoperator
+12. bitset²Ù×÷    //expression/bitsetoperator
+13. ÓÅÏÈ¼¶     //expression/null--²Ù×÷·û¾ßÓÐÓÅÏÈ¼¶ºÍ½áºÏÐÔ¡£¸³Öµ²Ù×÷·ûÊÇÓÒ½áºÏµÄ£¬ËãÊý²Ù×÷·ûÊÇ×ó½áºÏµÄ¡£
+14. ÀàÐÍ×ª»»   //expression/typeconversion--ËãÊõ×ª»»(arithmetic conversions);ÒþÊ½ÀàÐÍ×ª»»(implicit type conversion)/ÏÔÊ¾×ª»»
+15. Õ»ÀàÊµÀý    //expression/
 
-******************5 è¯­å¥******************
-1.ç®€å•è¯­å¥å’Œå¤åˆè¯­å¥ //statement/null--ç©ºè¯­å¥  ;
-2.å£°æ˜Žè¯­å¥        //statement/null--å£°æ˜Žè¯­å¥(declaration statement)ï¼Œå¯¹è±¡çš„å®šä¹‰(å®šä¹‰è¯­å¥definition)ï¼Œ
-3.ifè¯­å¥          //statement/judgment/null--if-elseè¯­å¥çš„æ›¿ä»£ç»“æž„æ˜¯switchè¯­å¥
-4.switchè¯­å¥      //statement/judgment
-5.forå¾ªçŽ¯è¯­å¥     //statement/loopstatement
-6.whileè¯­å¥       //statement/loopstatement
-7.do whileè¯­å¥    //statement/loopstatement
-8.breakè¯­å¥      //statement/loopstatement
-9.continueè¯­å¥   //statement/loopstatement
-10.gotoè¯­å¥      //statement/loopstatement
-11.é“¾è¡¨å®žä¾‹      //statement
+******************5 Óï¾ä******************
+1.¼òµ¥Óï¾äºÍ¸´ºÏÓï¾ä //statement/null--¿ÕÓï¾ä  ;
+2.ÉùÃ÷Óï¾ä        //statement/null--ÉùÃ÷Óï¾ä(declaration statement)£¬¶ÔÏóµÄ¶¨Òå(¶¨ÒåÓï¾ädefinition)£¬
+3.ifÓï¾ä          //statement/judgment/null--if-elseÓï¾äµÄÌæ´ú½á¹¹ÊÇswitchÓï¾ä
+4.switchÓï¾ä      //statement/judgment
+5.forÑ­»·Óï¾ä     //statement/loopstatement
+6.whileÓï¾ä       //statement/loopstatement
+7.do whileÓï¾ä    //statement/loopstatement
+8.breakÓï¾ä      //statement/loopstatement
+9.continueÓï¾ä   //statement/loopstatement
+10.gotoÓï¾ä      //statement/loopstatement
+11.Á´±íÊµÀý      //statement
 
-******************6 æŠ½è±¡å®¹å™¨ç±»åž‹**************+****
-é¡ºåºå®¹å™¨(sequence container)ï¼šæ‹¥æœ‰ç”±å•ä¸€ç±»åž‹å…ƒç´ ç»„æˆçš„ä¸€ä¸ªæœ‰åºé›†åˆã€‚
-å…³è”å®¹å™¨(associative container)ï¼šæ”¯æŒæŸ¥è¯¢ä¸€ä¸ªå…ƒç´ æ˜¯å¦å­˜åœ¨ï¼Œå¹¶å¯ä»¥æœ‰æ•ˆåœ°èŽ·å–å…ƒç´ ã€‚
-1.æ–‡æœ¬æŸ¥è¯¢ç³»ç»Ÿ
-2.vectorè¿˜æ˜¯list
-    //vectorè¡¨ç¤ºä¸€æ®µè¿žç»­çš„å†…å­˜åŒºåŸŸï¼Œæ¯ä¸ªå…ƒç´ è¢«é¡ºåºå­˜å‚¨åœ¨è¿™æ®µå†…å­˜ä¸­ã€‚
-        //å¯¹å…¶éšæœºè®¿é—®æ•ˆçŽ‡é«˜ï¼›ä½†åœ¨ä»»æ„ä½ç½®ï¼Œè€Œä¸æ˜¯åœ¨vectoræœ«å°¾æ’å…¥/åˆ é™¤å…ƒç´ ï¼Œåˆ™æ•ˆçŽ‡å¾ˆä½Žã€‚
+******************6 ³éÏóÈÝÆ÷ÀàÐÍ**************+****
+Ë³ÐòÈÝÆ÷(sequence container)£ºÓµÓÐÓÉµ¥Ò»ÀàÐÍÔªËØ×é³ÉµÄÒ»¸öÓÐÐò¼¯ºÏ¡£
+¹ØÁªÈÝÆ÷(associative container)£ºÖ§³Ö²éÑ¯Ò»¸öÔªËØÊÇ·ñ´æÔÚ£¬²¢¿ÉÒÔÓÐÐ§µØ»ñÈ¡ÔªËØ¡£
+1.ÎÄ±¾²éÑ¯ÏµÍ³
+2.vector»¹ÊÇlist
+    //vector±íÊ¾Ò»¶ÎÁ¬ÐøµÄÄÚ´æÇøÓò£¬Ã¿¸öÔªËØ±»Ë³Ðò´æ´¢ÔÚÕâ¶ÎÄÚ´æÖÐ¡£
+        //¶ÔÆäËæ»ú·ÃÎÊÐ§ÂÊ¸ß£»µ«ÔÚÈÎÒâÎ»ÖÃ£¬¶ø²»ÊÇÔÚvectorÄ©Î²²åÈë/É¾³ýÔªËØ£¬ÔòÐ§ÂÊºÜµÍ¡£
 
-    //listè¡¨ç¤ºéžè¿žç»­çš„å†…å­˜åŒºåŸŸï¼Œå¹¶é€šè¿‡ä¸€å¯¹æŒ‡å‘é¦–å°¾çš„æŒ‡é’ˆåŒå‘è¿žæŽ¥èµ·æ¥ã€‚
-        //ä»»æ„ä½ç½®æ’å…¥ã€åˆ é™¤æ•ˆçŽ‡é«˜ã€‚
-    //å°åž‹æ•°æ®vectoræ•ˆçŽ‡é«˜äºŽlistï¼Œåä¹‹listæ•ˆçŽ‡é«˜äºŽvectorã€‚
+    //list±íÊ¾·ÇÁ¬ÐøµÄÄÚ´æÇøÓò£¬²¢Í¨¹ýÒ»¶ÔÖ¸ÏòÊ×Î²µÄÖ¸ÕëË«ÏòÁ¬½ÓÆðÀ´¡£
+        //ÈÎÒâÎ»ÖÃ²åÈë¡¢É¾³ýÐ§ÂÊ¸ß¡£
+    //Ð¡ÐÍÊý¾ÝvectorÐ§ÂÊ¸ßÓÚlist£¬·´Ö®listÐ§ÂÊ¸ßÓÚvector¡£
 
-    //ä¸ºæé«˜æ•ˆçŽ‡ï¼Œå®žé™…ä¸Švectorå¹¶ä¸æ˜¯éšæ¯ä¸€ä¸ªå…ƒç´ çš„æ’å…¥è€Œå¢žé•¿è‡ªå·±ï¼Œè€Œæ˜¯å½“vectoréœ€è¦å¢žé•¿è‡ªå·±æ˜¯ï¼Œ
+    //ÎªÌá¸ßÐ§ÂÊ£¬Êµ¼ÊÉÏvector²¢²»ÊÇËæÃ¿Ò»¸öÔªËØµÄ²åÈë¶øÔö³¤×Ô¼º£¬¶øÊÇµ±vectorÐèÒªÔö³¤×Ô¼ºÊÇ£¬
 
-    //å®ƒå®žé™…åˆ†é…çš„ç©ºé—´æ¯”å½“å‰æ‰€éœ€çš„ç©ºé—´è¦å¤šä¸€äº›ã€‚è¿™ä¸ªç­–ç•¥æ˜¯å®¹å™¨çš„å¢žé•¿æ•ˆçŽ‡æ›´é«˜ã€‚
+    //ËüÊµ¼Ê·ÖÅäµÄ¿Õ¼ä±Èµ±Ç°ËùÐèµÄ¿Õ¼äÒª¶àÒ»Ð©¡£Õâ¸ö²ßÂÔÊÇÈÝÆ÷µÄÔö³¤Ð§ÂÊ¸ü¸ß¡£
 
-3.vectoræ€Žæ ·è‡ªå·±å¢žé•¿
-   //å®¹é‡æŒ‡åœ¨å®¹å™¨ä¸‹ä¸€æ¬¡éœ€è¦å¢žé•¿è‡ªå·±ä¹‹å‰èƒ½å¤Ÿè¢«åŠ å…¥åˆ°å®¹å™¨ä¸­çš„å…ƒç´ çš„æ€»æ•°(å®¹é‡åªä¸Žè¿žç»­å­˜å‚¨å™¨æœ‰å…³ï¼š
-   //å¦‚vectorã€dequeã€æˆ–stringã€‚listä¸è¦æ±‚å®¹é‡)ã€‚é•¿åº¦æŒ‡å®¹å™¨å½“å‰æ‹¥æœ‰å…ƒç´ çš„ä¸ªæ•°ã€‚
-   //å®žé™…ä¸Š vector å¹¶ä¸æ˜¯éšæ¯ä¸€ä¸ªå…ƒç´ çš„æ’å…¥è€Œå¢žé•¿è‡ªå·± è€Œæ˜¯å½“ vector éœ€
-   //è¦å¢žé•¿è‡ªèº«æ—¶ å®ƒå®žé™…åˆ†é…çš„ç©ºé—´æ¯”å½“å‰æ‰€éœ€çš„ç©ºé—´è¦å¤šä¸€äº› ä¹Ÿå°±æ˜¯è¯´ å®ƒåˆ†é…äº†ä¸€äº›é¢
-   //å¤–çš„å†…å­˜å®¹é‡(æˆ–è€…è¯´å®ƒé¢„ç•™äº†è¿™äº›å­˜å‚¨åŒº)åˆ†é…çš„é¢å¤–å®¹é‡çš„ç¡®åˆ‡æ•°ç›®ç”±å…·ä½“å®žçŽ°å®šä¹‰è¿™ä¸ªç­–ç•¥ä½¿å®¹å™¨çš„å¢žé•¿æ•ˆçŽ‡æ›´é«˜
-4.å®šä¹‰ä¸€ä¸ªé¡ºåºå®¹å™¨
-5.è¿­ä»£å™¨(iterator)
-    //æä¾›äº†ä¸€ç§ä¸€èˆ¬åŒ–çš„æ–¹æ³•ï¼Œå¯¹é¡ºåºæˆ–å…³è”å®¹å™¨ç±»åž‹ä¸­çš„æ¯ä¸ªå…ƒç´ è¿›è¡Œè¿žç»­è®¿é—®ã€‚
-    //æä¾›begin()å’Œend()æˆå‘˜å‡½æ•°ï¼Œåˆ†åˆ«æŒ‡å‘ç¬¬ä¸€ä¸ªå’Œæœ«å°¾å…ƒç´ çš„ä¸‹ä¸€ä¸ªä½ç½®ã€‚
+3.vectorÔõÑù×Ô¼ºÔö³¤
+   //ÈÝÁ¿Ö¸ÔÚÈÝÆ÷ÏÂÒ»´ÎÐèÒªÔö³¤×Ô¼ºÖ®Ç°ÄÜ¹»±»¼ÓÈëµ½ÈÝÆ÷ÖÐµÄÔªËØµÄ×ÜÊý(ÈÝÁ¿Ö»ÓëÁ¬Ðø´æ´¢Æ÷ÓÐ¹Ø£º
+   //Èçvector¡¢deque¡¢»òstring¡£list²»ÒªÇóÈÝÁ¿)¡£³¤¶ÈÖ¸ÈÝÆ÷µ±Ç°ÓµÓÐÔªËØµÄ¸öÊý¡£
+   //Êµ¼ÊÉÏ vector ²¢²»ÊÇËæÃ¿Ò»¸öÔªËØµÄ²åÈë¶øÔö³¤×Ô¼º ¶øÊÇµ± vector Ðè
+   //ÒªÔö³¤×ÔÉíÊ± ËüÊµ¼Ê·ÖÅäµÄ¿Õ¼ä±Èµ±Ç°ËùÐèµÄ¿Õ¼äÒª¶àÒ»Ð© Ò²¾ÍÊÇËµ Ëü·ÖÅäÁËÒ»Ð©¶î
+   //ÍâµÄÄÚ´æÈÝÁ¿(»òÕßËµËüÔ¤ÁôÁËÕâÐ©´æ´¢Çø)·ÖÅäµÄ¶îÍâÈÝÁ¿µÄÈ·ÇÐÊýÄ¿ÓÉ¾ßÌåÊµÏÖ¶¨ÒåÕâ¸ö²ßÂÔÊ¹ÈÝÆ÷µÄÔö³¤Ð§ÂÊ¸ü¸ß
+4.¶¨ÒåÒ»¸öË³ÐòÈÝÆ÷
+5.µü´úÆ÷(iterator)
+    //Ìá¹©ÁËÒ»ÖÖÒ»°ã»¯µÄ·½·¨£¬¶ÔË³Ðò»ò¹ØÁªÈÝÆ÷ÀàÐÍÖÐµÄÃ¿¸öÔªËØ½øÐÐÁ¬Ðø·ÃÎÊ¡£
+    //Ìá¹©begin()ºÍend()³ÉÔ±º¯Êý£¬·Ö±ðÖ¸ÏòµÚÒ»¸öºÍÄ©Î²ÔªËØµÄÏÂÒ»¸öÎ»ÖÃ¡£
     for(iter = container.begin(); iter != container.end(); ++iter){}
 
-6.é¡ºåºå®¹å™¨æ“ä½œ
-    //å°¾éƒ¨è¿½åŠ ï¼ˆpush_back()ï¼‰ï¼Œæ’å…¥ï¼ˆinsert()ï¼‰ï¼ŒæŸ¥è¯¢ï¼ˆfind()ï¼‰ï¼Œåˆ é™¤ï¼ˆdelete()ï¼‰ï¼Œ
-    //èµ‹å€¼ï¼ˆslist1 = slist2ï¼‰å’Œå¯¹æ¢(slist1.swap(slist2))ï¼Œæ³›åž‹è¿ç®—
+6.Ë³ÐòÈÝÆ÷²Ù×÷
+    //Î²²¿×·¼Ó£¨push_back()£©£¬²åÈë£¨insert()£©£¬²éÑ¯£¨find()£©£¬É¾³ý£¨delete()£©£¬
+    //¸³Öµ£¨slist1 = slist2£©ºÍ¶Ô»»(slist1.swap(slist2))£¬·ºÐÍÔËËã
 
-7.å­˜å‚¨æ–‡æœ¬è¡Œ
-8.æ‰¾åˆ°ä¸€ä¸ªå­ä¸²
-9.å¤„ç†æ ‡ç‚¹ç¬¦å·
-10.ä»»æ„å…¶ä»–æ ¼å¼çš„å­—ç¬¦ä¸²
-11.å…¶ä»–stringæ“ä½œ
-12.ç”Ÿæˆæ–‡æœ¬ä½ç½®map
-13.ç©¿ä»¶å•è¯æŽ’é™¤é›†
-14.å®Œæ•´çš„ç¨‹åº       //abstractontainer/abstractcontainer
-15.multimapå’Œmultiset
-    //mapå’Œliståªèƒ½åŒ…å«æ¯ä¸ªé”®çš„å•ä¸ªå®žä¾‹ï¼Œè€Œmultisetå’Œmultimapå…è®¸è¦è¢«å­˜å‚¨çš„é”®å‡ºçŽ°å¤šæ¬¡ã€‚
-    //è¦ä½¿ç”¨multimapå’Œmulitestï¼Œéœ€åŒ…å«mapå’ŒsetæŠ•æ–‡ä»¶ã€‚
-16.æ ˆ
-    //æ ˆå®¹å™¨æ”¯æŒçš„æ“ä½œï¼šempty(), size(), pop(), top(), push(item)--æ”¾å…¥æ–°çš„æ ˆé¡¶å…ƒç´ 
-17.é˜Ÿåˆ—å’Œä¼˜å…ˆçº§é˜Ÿåˆ—
-    //é˜Ÿåˆ—(queue)æŠ½è±¡ä½“çŽ°äº†å…ˆè¿›å…ˆå‡º(FIFOï¼Œå³"firs in, first out")çš„å­˜å‚¨å’Œæ£€ç´¢ç­–ç•¥ã€‚
-    //æ ‡å‡†åº“æä¾›äº†ä¸¤ç§é£Žæ ¼çš„é˜Ÿåˆ—ï¼šFIFOé˜Ÿåˆ—(queue)åŠpriority_queue(ä¼˜å…ˆçº§é˜Ÿåˆ—)ã€‚
-    //é˜Ÿåˆ—æ”¯æŒçš„æ“ä½œï¼šempty(), size(), pop(),
-    //front()--è¿”å›žï¼Œä½†ä¸åˆ é™¤é˜Ÿé¦–å…ƒç´ ï¼Œåªèƒ½åº”ç”¨åœ¨ä¸€èˆ¬é˜Ÿåˆ—ä¸Š
-    //back()--è¿”å›žï¼Œä½†ä¸åˆ é™¤é˜Ÿå°¾å…ƒç´ ï¼Œåªèƒ½åº”ç”¨åœ¨ä¸€èˆ¬é˜Ÿåˆ—ä¸Š
-    //top(), push(item)ã€‚
-18.å›žé¡¾iStackç±»
+7.´æ´¢ÎÄ±¾ÐÐ
+8.ÕÒµ½Ò»¸ö×Ó´®
+9.´¦Àí±êµã·ûºÅ
+10.ÈÎÒâÆäËû¸ñÊ½µÄ×Ö·û´®
+11.ÆäËûstring²Ù×÷
+12.Éú³ÉÎÄ±¾Î»ÖÃmap
+13.´©¼þµ¥´ÊÅÅ³ý¼¯
+14.ÍêÕûµÄ³ÌÐò       //abstractontainer/abstractcontainer
+15.multimapºÍmultiset
+    //mapºÍlistÖ»ÄÜ°üº¬Ã¿¸ö¼üµÄµ¥¸öÊµÀý£¬¶ømultisetºÍmultimapÔÊÐíÒª±»´æ´¢µÄ¼ü³öÏÖ¶à´Î¡£
+    //ÒªÊ¹ÓÃmultimapºÍmulitest£¬Ðè°üº¬mapºÍsetÍ¶ÎÄ¼þ¡£
+16.Õ»
+    //Õ»ÈÝÆ÷Ö§³ÖµÄ²Ù×÷£ºempty(), size(), pop(), top(), push(item)--·ÅÈëÐÂµÄÕ»¶¥ÔªËØ
+17.¶ÓÁÐºÍÓÅÏÈ¼¶¶ÓÁÐ
+    //¶ÓÁÐ(queue)³éÏóÌåÏÖÁËÏÈ½øÏÈ³ö(FIFO£¬¼´"firs in, first out")µÄ´æ´¢ºÍ¼ìË÷²ßÂÔ¡£
+    //±ê×¼¿âÌá¹©ÁËÁ½ÖÖ·ç¸ñµÄ¶ÓÁÐ£ºFIFO¶ÓÁÐ(queue)¼°priority_queue(ÓÅÏÈ¼¶¶ÓÁÐ)¡£
+    //¶ÓÁÐÖ§³ÖµÄ²Ù×÷£ºempty(), size(), pop(),
+    //front()--·µ»Ø£¬µ«²»É¾³ý¶ÓÊ×ÔªËØ£¬Ö»ÄÜÓ¦ÓÃÔÚÒ»°ã¶ÓÁÐÉÏ
+    //back()--·µ»Ø£¬µ«²»É¾³ý¶ÓÎ²ÔªËØ£¬Ö»ÄÜÓ¦ÓÃÔÚÒ»°ã¶ÓÁÐÉÏ
+    //top(), push(item)¡£
+18.»Ø¹ËiStackÀà
 
-******************7 å‡½æ•°******************
-1.æ¦‚è¿°
-    //å››ç§ç‰¹æ®Šçš„å‡½æ•°ç±»åž‹ï¼šå†…è”(inline)å‡½æ•°ã€é€’å½’å‡½æ•°ã€ç”¨é“¾æŽ¥æŒ‡ç¤ºç¬¦(linkage directive)å£°æ˜Žçš„éžC++å‡½æ•°ã€‚
-    //å‡½æ•°è°ƒç”¨ï¼šå¦‚æžœå‡½æ•°å·²ç»å£°æ˜Žä¸ºinline(å†…è”)ï¼Œåˆ™å‡½æ•°ä½“å¯èƒ½åœ¨ç¼–è¯‘æœŸé—´å®ƒçš„è°ƒç”¨ç‚¹æ’’èŠ±å§‘å¨˜å°±è¢«å±•å¼€ã€‚å¦åˆ™åœ¨è¿è¡Œæ—¶æ‰è¢«ç›—è°ƒç”¨ã€‚
-2.å‡½æ•°åŽŸåž‹
-3.å‚æ•°ä¼ é€’
-    //C++æ˜¯ä¸€ç§å¼ºç±»åž‹(strong type)è¯­è¨€ã€‚æ¯ä¸ªå‡½æ•°è°ƒç”¨çš„å®žå‚åœ¨ç¼–è¯‘æœŸé—´éƒ½è¦ç»è¿‡ç±»åž‹æ£€æŸ¥(type-ched).
-    //æ‰€æœ‰å‡½æ•°éƒ½ä½¿ç”¨åœ¨ç¨‹åºè¿è¡Œæ ˆ(run-time stack)ä¸­åˆ†é…çš„å­˜å‚¨åŒºã€‚è¯¥å­˜å‚¨åŒºä¸€ç›´ä¸Žè¯¥å‡½æ•°å…³è”ï¼Œç›´åˆ°å‡½æ•°ç»“æŸã€‚è¯¥å‡½æ•°çš„æ•´ä¸ªå­˜å‚¨åŒºè¢«ç§°ä¸ºæ´»åŠ¨è®°å½•(activation record)
-    //æŒ‡é’ˆå’Œå¼•ç”¨å‚æ•°éƒ½å…è®¸å‡½æ•°ä¿®æ”¹å®žå‚æŒ‡å‘çš„å¯¹è±¡ã€‚ä¸¤ç§ç±»åž‹çš„å‚æ•°éƒ½å…è®¸æœ‰æ•ˆåœ°å‘å‡½æ•°ä¼ é€’å¤§åž‹ç±»å¯¹è±¡ã€‚
-    //å¼•ç”¨å¿…é¡»è¢«åˆå§‹åŒ–åŒ–ä¸ºæŒ‡å®šä¸€ä¸ªå¯¹è±¡ï¼Œä¸€æ—¦åˆå§‹åŒ–å°±ä¸èƒ½å†æŒ‡å‘å…¶ä»–å¯¹è±¡ï¼›æŒ‡é’ˆå¯èƒ½æŒ‡å‘ä¸€ä¸ªå¯¹è±¡æˆ–æ²¡æœ‰ä»»ä½•å¯¹è±¡ï¼Œæ‰€ä»¥å‡½æ•°åœ¨ç¡®å®šæŒ‡é’ˆæŒ‡å‘ä¸€ä¸ªæœ‰æ•ˆçš„å¯¹è±¡ä¹‹å‰ä¸èƒ½å®‰å…¨åœ°è§£å¼•ç”¨(dereference)ä¸€ä¸ªæŒ‡é’ˆã€‚
-    //æ•°ç»„å‚æ•°ï¼šC++ä¸­ï¼Œæ•°ç»„æ°¸è¿œä¸ä¼šå®‰å€¼ä¼ é€’ã€‚å®ƒæ˜¯ä¼ é€’ç¬¬ä¸€ä¸ªå…ƒç´ (å‡†ç¡®åœ°è¯´æ˜¯ç¬¬0ä¸ª)çš„æŒ‡é’ˆã€‚
-    //æŠ½è±¡å®¹å™¨ç±»åž‹å‚æ•°--å½“å®¹å™¨ç±»åž‹çš„å‚æ•°æŒ‰å€¼ä¼ é€’æ—¶,å®¹å™¨ä»¥åŠå…¨éƒ¨å…ƒç´ éƒ½è¢«æ‹·è´åˆ°è¢«è°ƒå‡½æ•°çš„æœ¬åœ°æ‹·è´ä¸­,å› ä¸ºæ‹·è´çš„æ•ˆçŽ‡éžå¸¸ä½Ž æ‰€ä»¥æŠŠå®¹å™¨ç±»åž‹çš„å‚æ•°å£°æ˜Žä¸ºå¼•ç”¨å‚æ•°æ¯”è¾ƒå¥½
-    //ç¼ºçœå®žå‚--char *screenInit( int height = 24, int width = 80, char background = ' ' );
-    //çœç•¥å·--æ— æ³•åˆ—å‡ºä¼ é€’ç»™å‚æ•°çš„æ‰€æœ‰å®žå‚çš„ç±»åž‹å’Œæ•°ç›®ï¼›çœç•¥å·æŒ‚èµ·ç±»åž‹æ£€æŸ¥æœºåˆ¶ã€‚
-    //çœç•¥å·æœ‰ä¸¤ç§å½¢å¼ï¼švoid foo(parm_list, ...)<é€—å·æ˜¯å¯é€‰çš„>; void foo(...)ã€‚
-4.è¿”å›žä¸€ä¸ªå€¼
-    //å‡½æ•°çš„è¿”å›žå€¼æ˜¯æŒ‰å€¼ä¼ é€’çš„(passed by value)
-    //å¦‚æžœè¿”å›žå€¼æ˜¯ä¸€ä¸ªå¤§åž‹å¯¹è±¡ï¼Œç”¨å¼•ç”¨(æˆ–æŒ‡é’ˆ)è¿”å›žç±»åž‹æ¯”æŒ‰å€¼è¿”å›žç±»å¯¹è±¡æ•ˆçŽ‡è¦é«˜å¾—å¤šã€‚åœ¨æŸäº›æƒ…å†µä¸‹ï¼Œç¼–è¯‘å™¨è‡ªåŠ¨æŒ‰å€¼è¿”å›žè½¬æ¢åˆ°æŒ‰å¼•ç”¨è¿”å›žã€‚è¯¥ä¼˜åŒ–è¢«ç§°ä¸ºå‘½åè¿”å›žå€¼ä¼˜åŒ–(named return value optimization).
-    //å£°æ˜Žä¸€ä¸ªæŒ‡å‘å±€éƒ¨å¯¹è±¡çš„å¼•ç”¨ã€‚å±€éƒ¨å¯¹è±¡çš„ç”Ÿå‘½æœŸéšå‡½æ•°çš„ç»“æŸè€Œç»“æŸã€‚å‡½æ•°è¿”å›žä¸€ä¸ªå·¦å€¼ï¼Œå¯¹è¿”å›žå€¼çš„ä»»ä½•ä¿®æ”¹éƒ½å°†æ”¹å˜è¢«è¿”å›žçš„å®žé™…å¯¹è±¡ã€‚
-    //ä¸€ä¸ªç¨‹åºä¸­çš„å„ç§å‡½æ•°å¯ä»¥é€šè¿‡ä¸¤ç§æœºåˆ¶è¿›è¡Œé€šè®¯(å€¼çš„äº¤æ¢)ã€‚
-        1.å…¨å±€å¯¹è±¡ï¼ˆglobal objectï¼‰ã€‚ç¼ºç‚¹ï¼š
-            ä½¿ç”¨å…¨å±€å˜é‡çš„å‡½æ•°ä¾èµ–äºŽå…¨å±€å˜é‡å¯¹è±¡çš„å­˜åœ¨å’Œç±»åž‹ï¼Œè¿™ä½¿å¾—åœ¨ä¸åŒä¸Šä¸‹æ–‡çŽ¯å¢ƒä¸­é‡ç”¨è¯¥å‡½æ•°æ›´åŠ å›°éš¾ã€‚
-            ä¿®æ”¹å‡½æ•°ï¼Œå…¨å±€ä¾èµ–å¢žåŠ äº†å¼•å…¥é”™è¯¯çš„å¯èƒ½æ€§ï¼›ä¸”åªå¯¹å±€éƒ¨åšä¿®æ”¹ä¹Ÿè¦æ±‚ç¨‹åºå‘˜å¿…é¡»ç†è§£æ•´ä¸ªç¨‹åºã€‚
-            å¦‚æžœå…¨å±€å˜é‡çš„åˆ°ä¸€ä¸ªä¸æ­£ç¡®çš„å€¼ï¼Œåˆ™å¿…é¡»æŸ¥æ‰¾æ•´ä¸ªç¨‹åºä»¥åˆ¤æ–­é”™è¯¯å‘ç”Ÿçš„ä½ç½®ï¼Œä¹Ÿå°±æ˜¯æ²¡æœ‰å®žçŽ°å±€éƒ¨åŒ–ã€‚
-            å½“ä¸€ä¸ªå‡½æ•°ä½¿ç”¨å…¨å±€å¯¹è±¡æ—¶ï¼Œé€’å½’æ›´åŠ éš¾ä»¥æ­£ç¡®å®Œæˆã€‚(é€’å½’å‡½æ•°åœ¨è°ƒç”¨è‡ªèº«æ—¶æ‰å‘ç”Ÿ)
-            åœ¨çº¿ç¨‹å­˜åœ¨çš„æƒ…å†µä¸‹ï¼Œå¿…é¡»åšç‰¹æ®Šçš„ç¼–ç ï¼Œä»¥ä¾¿åŒæ­¥å„ä¸ªçº¿ç¨‹å¯¹äºŽå…¨å±€å¯¹è±¡çš„è¯»å’Œå†™æ“ä½œã€‚
-5.é€’å½’
-    //ç›´æŽ¥æˆ–é—´æŽ¥è°ƒç”¨è‡ªå·±çš„å‡½æ•°è¢«ç§°ä¸ºé€’å½’å‡½æ•°(recursive function)ã€‚
-    //å¿…é¡»å®šä¹‰ä¸€ä¸ªåœæ­¢æ¡ä»¶(stoping condition)
-6.inlineå‡½æ•°
-    //inlineå»ºè®®ç¼–è¯‘å™¨å°†å‡½æ•°åœ¨èŠ‚ç‚¹å±•å¼€ã€‚ç¼–è¯‘å™¨å¯ä»¥å¿½ç•¥ã€‚
-7.è¿žæŽ¥æŒ‡ç¤ºç¬¦ï¼šextern "C"
-    //ç¨‹åºå‘˜ç”¨é“¾æŽ¥æŒ‡ç¤ºç¬¦(linkage directive)å‘Šè¯‰ç¼–è¯‘å™¨ï¼Œè¯¥å‡½æ•°æ˜¯ç”¨å…¶ä»–çš„ç¨‹åºè®¾è®¡è¯­è¨€ç¼–å†™çš„ã€‚é“¾æŽ¥æŒ‡ç¤ºç¬¦æœ‰ä¸¤ç§å½¢å¼ï¼š
-        å•ä¸€è¯­å¥ï¼ˆsingle statementï¼‰å½¢å¼ï¼Œä¹Ÿå¯ä»¥æ˜¯å¤åˆè¯­å¥ï¼ˆcompound statementï¼‰
-    //é“¾æŽ¥æŒ‡ç¤ºç¬¦çš„ç¬¬ä¸€ç§å½¢å¼ç”±å…³é”®å­—externåŽè·Ÿä¸€ä¸ªå­—ç¬¦ä¸²å¸¸é‡ä»¥åŠä¸€ä¸ªâ€œæ™®é€šâ€çš„å‡½æ•°å£°æ˜Žæž„æˆã€‚è™½ç„¶å‡½æ•°æ˜¯ç”¨å¦å¤–ä¸€ç§è¯­è¨€ç¼–å†™çš„ï¼Œä½†è°ƒç”¨å®ƒä»ç„¶éœ€è¦ç±»åž‹æ£€æŸ¥ã€‚
+******************7 º¯Êý******************
+1.¸ÅÊö
+    //ËÄÖÖÌØÊâµÄº¯ÊýÀàÐÍ£ºÄÚÁª(inline)º¯Êý¡¢µÝ¹éº¯Êý¡¢ÓÃÁ´½ÓÖ¸Ê¾·û(linkage directive)ÉùÃ÷µÄ·ÇC++º¯Êý¡£
+    //º¯Êýµ÷ÓÃ£ºÈç¹ûº¯ÊýÒÑ¾­ÉùÃ÷Îªinline(ÄÚÁª)£¬Ôòº¯ÊýÌå¿ÉÄÜÔÚ±àÒëÆÚ¼äËüµÄµ÷ÓÃµãÈö»¨¹ÃÄï¾Í±»Õ¹¿ª¡£·ñÔòÔÚÔËÐÐÊ±²Å±»µÁµ÷ÓÃ¡£
+2.º¯ÊýÔ­ÐÍ
+3.²ÎÊý´«µÝ
+    //C++ÊÇÒ»ÖÖÇ¿ÀàÐÍ(strong type)ÓïÑÔ¡£Ã¿¸öº¯Êýµ÷ÓÃµÄÊµ²ÎÔÚ±àÒëÆÚ¼ä¶¼Òª¾­¹ýÀàÐÍ¼ì²é(type-ched).
+    //ËùÓÐº¯Êý¶¼Ê¹ÓÃÔÚ³ÌÐòÔËÐÐÕ»(run-time stack)ÖÐ·ÖÅäµÄ´æ´¢Çø¡£¸Ã´æ´¢ÇøÒ»Ö±Óë¸Ãº¯Êý¹ØÁª£¬Ö±µ½º¯Êý½áÊø¡£¸Ãº¯ÊýµÄÕû¸ö´æ´¢Çø±»³ÆÎª»î¶¯¼ÇÂ¼(activation record)
+    //Ö¸ÕëºÍÒýÓÃ²ÎÊý¶¼ÔÊÐíº¯ÊýÐÞ¸ÄÊµ²ÎÖ¸ÏòµÄ¶ÔÏó¡£Á½ÖÖÀàÐÍµÄ²ÎÊý¶¼ÔÊÐíÓÐÐ§µØÏòº¯Êý´«µÝ´óÐÍÀà¶ÔÏó¡£
+    //ÒýÓÃ±ØÐë±»³õÊ¼»¯»¯ÎªÖ¸¶¨Ò»¸ö¶ÔÏó£¬Ò»µ©³õÊ¼»¯¾Í²»ÄÜÔÙÖ¸ÏòÆäËû¶ÔÏó£»Ö¸Õë¿ÉÄÜÖ¸ÏòÒ»¸ö¶ÔÏó»òÃ»ÓÐÈÎºÎ¶ÔÏó£¬ËùÒÔº¯ÊýÔÚÈ·¶¨Ö¸ÕëÖ¸ÏòÒ»¸öÓÐÐ§µÄ¶ÔÏóÖ®Ç°²»ÄÜ°²È«µØ½âÒýÓÃ(dereference)Ò»¸öÖ¸Õë¡£
+    //Êý×é²ÎÊý£ºC++ÖÐ£¬Êý×éÓÀÔ¶²»»á°²Öµ´«µÝ¡£ËüÊÇ´«µÝµÚÒ»¸öÔªËØ(×¼È·µØËµÊÇµÚ0¸ö)µÄÖ¸Õë¡£
+    //³éÏóÈÝÆ÷ÀàÐÍ²ÎÊý--µ±ÈÝÆ÷ÀàÐÍµÄ²ÎÊý°´Öµ´«µÝÊ±,ÈÝÆ÷ÒÔ¼°È«²¿ÔªËØ¶¼±»¿½±´µ½±»µ÷º¯ÊýµÄ±¾µØ¿½±´ÖÐ,ÒòÎª¿½±´µÄÐ§ÂÊ·Ç³£µÍ ËùÒÔ°ÑÈÝÆ÷ÀàÐÍµÄ²ÎÊýÉùÃ÷ÎªÒýÓÃ²ÎÊý±È½ÏºÃ
+    //È±Ê¡Êµ²Î--char *screenInit( int height = 24, int width = 80, char background = ' ' );
+    //Ê¡ÂÔºÅ--ÎÞ·¨ÁÐ³ö´«µÝ¸ø²ÎÊýµÄËùÓÐÊµ²ÎµÄÀàÐÍºÍÊýÄ¿£»Ê¡ÂÔºÅ¹ÒÆðÀàÐÍ¼ì²é»úÖÆ¡£
+    //Ê¡ÂÔºÅÓÐÁ½ÖÖÐÎÊ½£ºvoid foo(parm_list, ...)<¶ººÅÊÇ¿ÉÑ¡µÄ>; void foo(...)¡£
+4.·µ»ØÒ»¸öÖµ
+    //º¯ÊýµÄ·µ»ØÖµÊÇ°´Öµ´«µÝµÄ(passed by value)
+    //Èç¹û·µ»ØÖµÊÇÒ»¸ö´óÐÍ¶ÔÏó£¬ÓÃÒýÓÃ(»òÖ¸Õë)·µ»ØÀàÐÍ±È°´Öµ·µ»ØÀà¶ÔÏóÐ§ÂÊÒª¸ßµÃ¶à¡£ÔÚÄ³Ð©Çé¿öÏÂ£¬±àÒëÆ÷×Ô¶¯°´Öµ·µ»Ø×ª»»µ½°´ÒýÓÃ·µ»Ø¡£¸ÃÓÅ»¯±»³ÆÎªÃüÃû·µ»ØÖµÓÅ»¯(named return value optimization).
+    //ÉùÃ÷Ò»¸öÖ¸Ïò¾Ö²¿¶ÔÏóµÄÒýÓÃ¡£¾Ö²¿¶ÔÏóµÄÉúÃüÆÚËæº¯ÊýµÄ½áÊø¶ø½áÊø¡£º¯Êý·µ»ØÒ»¸ö×óÖµ£¬¶Ô·µ»ØÖµµÄÈÎºÎÐÞ¸Ä¶¼½«¸Ä±ä±»·µ»ØµÄÊµ¼Ê¶ÔÏó¡£
+    //Ò»¸ö³ÌÐòÖÐµÄ¸÷ÖÖº¯Êý¿ÉÒÔÍ¨¹ýÁ½ÖÖ»úÖÆ½øÐÐÍ¨Ñ¶(ÖµµÄ½»»»)¡£
+        1.È«¾Ö¶ÔÏó£¨global object£©¡£È±µã£º
+            Ê¹ÓÃÈ«¾Ö±äÁ¿µÄº¯ÊýÒÀÀµÓÚÈ«¾Ö±äÁ¿¶ÔÏóµÄ´æÔÚºÍÀàÐÍ£¬ÕâÊ¹µÃÔÚ²»Í¬ÉÏÏÂÎÄ»·¾³ÖÐÖØÓÃ¸Ãº¯Êý¸ü¼ÓÀ§ÄÑ¡£
+            ÐÞ¸Äº¯Êý£¬È«¾ÖÒÀÀµÔö¼ÓÁËÒýÈë´íÎóµÄ¿ÉÄÜÐÔ£»ÇÒÖ»¶Ô¾Ö²¿×öÐÞ¸ÄÒ²ÒªÇó³ÌÐòÔ±±ØÐëÀí½âÕû¸ö³ÌÐò¡£
+            Èç¹ûÈ«¾Ö±äÁ¿µÄµ½Ò»¸ö²»ÕýÈ·µÄÖµ£¬Ôò±ØÐë²éÕÒÕû¸ö³ÌÐòÒÔÅÐ¶Ï´íÎó·¢ÉúµÄÎ»ÖÃ£¬Ò²¾ÍÊÇÃ»ÓÐÊµÏÖ¾Ö²¿»¯¡£
+            µ±Ò»¸öº¯ÊýÊ¹ÓÃÈ«¾Ö¶ÔÏóÊ±£¬µÝ¹é¸ü¼ÓÄÑÒÔÕýÈ·Íê³É¡£(µÝ¹éº¯ÊýÔÚµ÷ÓÃ×ÔÉíÊ±²Å·¢Éú)
+            ÔÚÏß³Ì´æÔÚµÄÇé¿öÏÂ£¬±ØÐë×öÌØÊâµÄ±àÂë£¬ÒÔ±ãÍ¬²½¸÷¸öÏß³Ì¶ÔÓÚÈ«¾Ö¶ÔÏóµÄ¶ÁºÍÐ´²Ù×÷¡£
+5.µÝ¹é
+    //Ö±½Ó»ò¼ä½Óµ÷ÓÃ×Ô¼ºµÄº¯Êý±»³ÆÎªµÝ¹éº¯Êý(recursive function)¡£
+    //±ØÐë¶¨ÒåÒ»¸öÍ£Ö¹Ìõ¼þ(stoping condition)
+6.inlineº¯Êý
+    //inline½¨Òé±àÒëÆ÷½«º¯ÊýÔÚ½ÚµãÕ¹¿ª¡£±àÒëÆ÷¿ÉÒÔºöÂÔ¡£
+7.Á¬½ÓÖ¸Ê¾·û£ºextern "C"
+    //³ÌÐòÔ±ÓÃÁ´½ÓÖ¸Ê¾·û(linkage directive)¸æËß±àÒëÆ÷£¬¸Ãº¯ÊýÊÇÓÃÆäËûµÄ³ÌÐòÉè¼ÆÓïÑÔ±àÐ´µÄ¡£Á´½ÓÖ¸Ê¾·ûÓÐÁ½ÖÖÐÎÊ½£º
+        µ¥Ò»Óï¾ä£¨single statement£©ÐÎÊ½£¬Ò²¿ÉÒÔÊÇ¸´ºÏÓï¾ä£¨compound statement£©
+    //Á´½ÓÖ¸Ê¾·ûµÄµÚÒ»ÖÖÐÎÊ½ÓÉ¹Ø¼ü×Öexternºó¸úÒ»¸ö×Ö·û´®³£Á¿ÒÔ¼°Ò»¸ö¡°ÆÕÍ¨¡±µÄº¯ÊýÉùÃ÷¹¹³É¡£ËäÈ»º¯ÊýÊÇÓÃÁíÍâÒ»ÖÖÓïÑÔ±àÐ´µÄ£¬µ«µ÷ÓÃËüÈÔÈ»ÐèÒªÀàÐÍ¼ì²é¡£
 
-8.main()ï¼šå¤„ç†å‘½ä»¤è¡Œé€‰é¡¹
-    //å¤„ç†å‘½ä»¤è¡Œé€‰é¡¹çš„åŸºæœ¬æ­¥éª¤å¦‚ä¸‹ï¼š
-        1.æŒ‰é¡ºåºä»Žargvä¸­å–å‡ºæ¯ä¸ªé€‰é¡¹ã€‚ç”¨forå¾ªçŽ¯æ¥å®Œæˆï¼Œä»Ž1å¼€å§‹è¿­ä»£ã€‚
+8.main()£º´¦ÀíÃüÁîÐÐÑ¡Ïî
+    //´¦ÀíÃüÁîÐÐÑ¡ÏîµÄ»ù±¾²½ÖèÈçÏÂ£º
+        1.°´Ë³Ðò´ÓargvÖÐÈ¡³öÃ¿¸öÑ¡Ïî¡£ÓÃforÑ­»·À´Íê³É£¬´Ó1¿ªÊ¼µü´ú¡£
             for(int ix = 1; ix < argc; ++ix) {
                 char *pchar = argv[ix];
                 //...
             }
-        2.ç¡®å®šé€‰é¡¹çš„ç±»åž‹ã€‚
+        2.È·¶¨Ñ¡ÏîµÄÀàÐÍ¡£
             switch(pchar[0]) {
                 case '-': {
-                    //è¯†åˆ«-h, -d, -v, -l, -o
+                    //Ê¶±ð-h, -d, -v, -l, -o
                 }
                 default: {
-                    //å¤„ç† -låŽçš„é™åˆ¶
-                    //-o åŽé¢çš„è¾“å‡ºæ–‡ä»¶
-                    // æ–‡ä»¶å...
+                    //´¦Àí -lºóµÄÏÞÖÆ
+                    //-o ºóÃæµÄÊä³öÎÄ¼þ
+                    // ÎÄ¼þÃû...
                 }
             }
-        3.å¡«å†™ä»£ç ï¼Œå¤„ç†ç¬¬2é¡¹ä¸­çš„ä¸¤ä¸ªcase
-        å¦‚æžœå­˜åœ¨â€œ-â€ï¼Œåˆ™æˆ‘ä»¬åªæ˜¯ç®€å•åœ°åˆ‡æ¢åˆ°ä¸‹ä¸€ä¸ªå­—ç¬¦ï¼Œç¡®å®šç”¨æˆ·æŒ‡å®šçš„é€‰é¡¹ã€‚
+        3.ÌîÐ´´úÂë£¬´¦ÀíµÚ2ÏîÖÐµÄÁ½¸öcase
+        Èç¹û´æÔÚ¡°-¡±£¬ÔòÎÒÃÇÖ»ÊÇ¼òµ¥µØÇÐ»»µ½ÏÂÒ»¸ö×Ö·û£¬È·¶¨ÓÃ»§Ö¸¶¨µÄÑ¡Ïî¡£
         case '-': {
             swtch(pchar[1])
             {
             case 'd':
-                //å¤„ç†è°ƒè¯•
+                //´¦Àíµ÷ÊÔ
                 break;
             case 'v'"
-                //å¤„ç†ç‰ˆæœ¬è¯·æ±‚
+                //´¦Àí°æ±¾ÇëÇó
                 break;
             case 'h':
-                //å¤„ç†å¸®åŠ©
+                //´¦Àí°ïÖú
                 break;
             case '0':
-                //å‡†å¤‡å¤„ç†è¾“å‡ºæ–‡ä»¶
+                //×¼±¸´¦ÀíÊä³öÎÄ¼þ
                 break;
             case 'l':
-                //å‡†å¤‡å¤„ç†è¾“å‡ºæ–‡ä»¶
+                //×¼±¸´¦ÀíÊä³öÎÄ¼þ
                 break;
             default:
-                //æ— æ³•è¾¨è¯†çš„é€‰é¡¹
-                //æŠ¥å‘Šå¹¶é€€å‡º
+                //ÎÞ·¨±æÊ¶µÄÑ¡Ïî
+                //±¨¸æ²¢ÍË³ö
             }
         }
-    //å¤„ç†å‘½ä»¤è¡Œçš„ç±»ï¼ŒæŠŠå‘½ä»¤è¡Œé€‰é¡¹çš„ç»†èŠ‚å°è£…èµ·æ¥ï¼Œä½¿å¾—å®ƒä¸ä¼šæ‰°ä¹±main()ã€‚
-9.æŒ‡å‘å‡½æ•°çš„æŒ‡é’ˆ
-    //è¿”å›žå€¼ç±»åž‹ ( * æŒ‡é’ˆå˜é‡å) ([å½¢å‚åˆ—è¡¨]);
-        æ³¨1ï¼šâ€œè¿”å›žå€¼ç±»åž‹â€è¯´æ˜Žå‡½æ•°çš„è¿”å›žç±»åž‹ï¼Œâ€œ(æŒ‡é’ˆå˜é‡å )â€ä¸­çš„æ‹¬å·ä¸èƒ½çœï¼Œæ‹¬å·æ”¹å˜äº†è¿ç®—ç¬¦çš„ä¼˜å…ˆçº§ã€‚
-        è‹¥çœç•¥æ•´ä½“åˆ™æˆä¸ºä¸€ä¸ªå‡½æ•°è¯´æ˜Žï¼Œ
-        è¯´æ˜Žäº†ä¸€ä¸ªè¿”å›žçš„æ•°æ®ç±»åž‹æ˜¯æŒ‡é’ˆçš„å‡½æ•°ï¼ŒåŽé¢çš„â€œå½¢å‚åˆ—è¡¨â€è¡¨ç¤ºæŒ‡é’ˆå˜é‡æŒ‡å‘çš„å‡½æ•°æ‰€å¸¦çš„å‚æ•°åˆ—è¡¨ã€‚ä¾‹å¦‚ï¼š
-        int func(int x); -- å£°æ˜Žä¸€ä¸ªå‡½æ•°
-        int (*f) (int x); å£°æ˜Žä¸€ä¸ªå‡½æ•°æŒ‡é’ˆ
-        f=func;  å°†funcå‡½æ•°çš„é¦–åœ°å€èµ‹ç»™æŒ‡é’ˆf æˆ–è€… f = &func;
-    //çœç•¥å·ä¹Ÿæ˜¯å‡½æ•°ç±»åž‹çš„ä¸€éƒ¨åˆ†ã€‚å¦‚æžœä¸¤ä¸ªå‡½æ•°å…·æœ‰ç›¸åŒçš„å‚æ•°è¡¨ï¼Œä½†æ˜¯ä¸€ä¸ªå‡½æ•°åœ¨å‚æ•°è¡¨æœ«å°¾æœ‰çœç•¥å·ï¼Œåˆ™å®ƒä»¬è¢«è§†ä¸ºä¸åŒçš„å‡½æ•°ç±»åž‹ã€‚
-        int (*pfce)(const char*, ...); //å¯ä»¥æŒ‡å‘printf()
-        int (*pfc)(const char*);       //å¯ä»¥æŒ‡å‘strlen()
-    //è°ƒç”¨ï¼šæŒ‡å‘å‡½æ•°çš„æŒ‡é’ˆå¯ä»¥è¢«ç”¨æ¥è°ƒç”¨å®ƒæ‰€æŒ‡å‘çš„å‡½æ•°ã€‚
-        è°ƒç”¨å‡½æ•°æ—¶ï¼Œä¸éœ€è¦è§£å¼•ç”¨æ“ä½œç¬¦ã€‚æ— è®ºæ˜¯ç”¨å‡½æ•°åç›´æŽ¥è°ƒç”¨å‡½æ•°ï¼Œè¿˜æ˜¯ç”¨æŒ‡é’ˆé—´æŽ¥è°ƒç”¨å‡½æ•°ï¼Œä¸¤ç§å†™æ³•æ˜¯ä¸€æ ·çš„ã€‚
+    //´¦ÀíÃüÁîÐÐµÄÀà£¬°ÑÃüÁîÐÐÑ¡ÏîµÄÏ¸½Ú·â×°ÆðÀ´£¬Ê¹µÃËü²»»áÈÅÂÒmain()¡£
+9.Ö¸Ïòº¯ÊýµÄÖ¸Õë
+    //·µ»ØÖµÀàÐÍ ( * Ö¸Õë±äÁ¿Ãû) ([ÐÎ²ÎÁÐ±í]);
+        ×¢1£º¡°·µ»ØÖµÀàÐÍ¡±ËµÃ÷º¯ÊýµÄ·µ»ØÀàÐÍ£¬¡°(Ö¸Õë±äÁ¿Ãû )¡±ÖÐµÄÀ¨ºÅ²»ÄÜÊ¡£¬À¨ºÅ¸Ä±äÁËÔËËã·ûµÄÓÅÏÈ¼¶¡£
+        ÈôÊ¡ÂÔÕûÌåÔò³ÉÎªÒ»¸öº¯ÊýËµÃ÷£¬
+        ËµÃ÷ÁËÒ»¸ö·µ»ØµÄÊý¾ÝÀàÐÍÊÇÖ¸ÕëµÄº¯Êý£¬ºóÃæµÄ¡°ÐÎ²ÎÁÐ±í¡±±íÊ¾Ö¸Õë±äÁ¿Ö¸ÏòµÄº¯ÊýËù´øµÄ²ÎÊýÁÐ±í¡£ÀýÈç£º
+        int func(int x); -- ÉùÃ÷Ò»¸öº¯Êý
+        int (*f) (int x); ÉùÃ÷Ò»¸öº¯ÊýÖ¸Õë
+        f=func;  ½«funcº¯ÊýµÄÊ×µØÖ·¸³¸øÖ¸Õëf »òÕß f = &func;
+    //Ê¡ÂÔºÅÒ²ÊÇº¯ÊýÀàÐÍµÄÒ»²¿·Ö¡£Èç¹ûÁ½¸öº¯Êý¾ßÓÐÏàÍ¬µÄ²ÎÊý±í£¬µ«ÊÇÒ»¸öº¯ÊýÔÚ²ÎÊý±íÄ©Î²ÓÐÊ¡ÂÔºÅ£¬ÔòËüÃÇ±»ÊÓÎª²»Í¬µÄº¯ÊýÀàÐÍ¡£
+        int (*pfce)(const char*, ...); //¿ÉÒÔÖ¸Ïòprintf()
+        int (*pfc)(const char*);       //¿ÉÒÔÖ¸Ïòstrlen()
+    //µ÷ÓÃ£ºÖ¸Ïòº¯ÊýµÄÖ¸Õë¿ÉÒÔ±»ÓÃÀ´µ÷ÓÃËüËùÖ¸ÏòµÄº¯Êý¡£
+        µ÷ÓÃº¯ÊýÊ±£¬²»ÐèÒª½âÒýÓÃ²Ù×÷·û¡£ÎÞÂÛÊÇÓÃº¯ÊýÃûÖ±½Óµ÷ÓÃº¯Êý£¬»¹ÊÇÓÃÖ¸Õë¼ä½Óµ÷ÓÃº¯Êý£¬Á½ÖÖÐ´·¨ÊÇÒ»ÑùµÄ¡£
 
-    //å‡½æ•°æŒ‡é’ˆæ•°ç»„
+    //º¯ÊýÖ¸ÕëÊý×é
     int (testCases[10])();
 
-******************7 å‡½æ•°******************
-******************7 å‡½æ•°******************
+******************7 º¯Êý******************
+******************7 º¯Êý******************
 
 
 
@@ -209,49 +209,49 @@
 
 
 
-1. æ–‡ä»¶æ“ä½œ #include <fstream>
-    ä»Žä¸€ä¸ªæ–‡ä»¶å†™åˆ°å¦ä¸€ä¸ªæ–‡ä»¶
+1. ÎÄ¼þ²Ù×÷ #include <fstream>
+    ´ÓÒ»¸öÎÄ¼þÐ´µ½ÁíÒ»¸öÎÄ¼þ
 
-2. æ•°ç»„ int fibon[9]   æ–æ³¢é‚£å¥‘æ•°åˆ—
+2. Êý×é int fibon[9]   ì³²¨ÄÇÆõÊýÁÐ
 
-3. åŠ¨æ€å†…å­˜åˆ†é…å’ŒæŒ‡é’ˆ int *pint;    //example: pointer.cpp
-    æŒ‡é’ˆçš„ç®—æœ¯è¿ç®—
+3. ¶¯Ì¬ÄÚ´æ·ÖÅäºÍÖ¸Õë int *pint;    //example: pointer.cpp
+    Ö¸ÕëµÄËãÊõÔËËã
 
 4. const
 
-5. ç±»ï¼Œå…¬æœ‰æŽ¥å£ï¼ˆpublic interface),ç§æœ‰æˆå‘˜æä¾›ç§æœ‰å®žçŽ°ä»£ç ï¼ˆprivate implementationï¼‰ã€‚
-    æˆå‘˜è®¿é—®æ“ä½œç¬¦ï¼ˆmember access operatorï¼‰ï¼šç±»å¯¹è±¡ç‚¹æ“ä½œç¬¦ï¼ˆ.ï¼‰ï¼Œç±»å¯¹è±¡æŒ‡é’ˆç®­å¤´æ“ä½œç¬¦ã€‚
-    ç±»åŸŸæ“ä½œç¬¦ï¼ˆclass scope operatorï¼‰IntArray::
-    ç±»çš„æ‹·è´æž„é€ å‡½æ•°ï¼ˆcopy constructorï¼‰
-    æžæž„æˆå‘˜å‡½æ•°ï¼ˆdestructor member functionï¼‰~  æžæž„å‡½æ•°ä¼šé‡Šæ”¾åœ¨ç±»å¯¹è±¡ä½¿ç”¨å’Œæž„é€ è¿‡ç¨‹ä¸­æ‰€èŽ·å¾—çš„èµ„æºã€‚
-    ç±»ç»§æ‰¿ï¼Œç»§æ‰¿ç±»
-    protectedçº§åˆ«
-    æ´¾ç”Ÿç±»æž„é€ å‡½æ•°çš„è¯­æ³•æä¾›äº†å‘åŸºç±»æž„é€ å‡½æ•°ä¼ é€’å‚æ•°çš„æŽ¥å£
-    å¤šç»§æ‰¿ï¼ˆmultiple inheritanceï¼Œä¹Ÿå«å¤šé‡ç»§æ‰¿ï¼‰
-    ç±»æ¨¡æ¿
+5. Àà£¬¹«ÓÐ½Ó¿Ú£¨public interface),Ë½ÓÐ³ÉÔ±Ìá¹©Ë½ÓÐÊµÏÖ´úÂë£¨private implementation£©¡£
+    ³ÉÔ±·ÃÎÊ²Ù×÷·û£¨member access operator£©£ºÀà¶ÔÏóµã²Ù×÷·û£¨.£©£¬Àà¶ÔÏóÖ¸Õë¼ýÍ·²Ù×÷·û¡£
+    ÀàÓò²Ù×÷·û£¨class scope operator£©IntArray::
+    ÀàµÄ¿½±´¹¹Ôìº¯Êý£¨copy constructor£©
+    Îö¹¹³ÉÔ±º¯Êý£¨destructor member function£©~  Îö¹¹º¯Êý»áÊÍ·ÅÔÚÀà¶ÔÏóÊ¹ÓÃºÍ¹¹Ôì¹ý³ÌÖÐËù»ñµÃµÄ×ÊÔ´¡£
+    Àà¼Ì³Ð£¬¼Ì³ÐÀà
+    protected¼¶±ð
+    ÅÉÉúÀà¹¹Ôìº¯ÊýµÄÓï·¨Ìá¹©ÁËÏò»ùÀà¹¹Ôìº¯Êý´«µÝ²ÎÊýµÄ½Ó¿Ú
+    ¶à¼Ì³Ð£¨multiple inheritance£¬Ò²½Ð¶àÖØ¼Ì³Ð£©
+    ÀàÄ£°å
 
-6. å†…è”å‡½æ•°ï¼šinlineå…³é”®å­—ä¿®é¥°çš„å‡½æ•°ã€‚
+6. ÄÚÁªº¯Êý£ºinline¹Ø¼ü×ÖÐÞÊÎµÄº¯Êý¡£
 
-7. å‡½æ•°é‡è½½ï¼ˆfunction overloadingï¼‰ï¼šåŒåï¼Œå‚æ•°ç±»åž‹æˆ–å‚æ•°çš„æ•°ç›®ä¸åŒã€‚
+7. º¯ÊýÖØÔØ£¨function overloading£©£ºÍ¬Ãû£¬²ÎÊýÀàÐÍ»ò²ÎÊýµÄÊýÄ¿²»Í¬¡£
 
-8. è™šæ‹Ÿå‡½æ•°ï¼ˆvirtual functionï¼‰
+8. ÐéÄâº¯Êý£¨virtual function£©
 
-9. æ³›åž‹è®¾è®¡
+9. ·ºÐÍÉè¼Æ
 
-10. æ•°æ®ç±»åž‹
-    æ–‡å­—å¸¸é‡ï¼šä¸èƒ½æ”¹å˜ï¼Œä¸èƒ½å¯»å€
-    åè¿›åˆ¶ã€å…«è¿›åˆ¶ã€åå…­è¿›åˆ¶
-    å˜é‡ï¼Œc++å…³é”®å­—
-    å¯¹è±¡å®šä¹‰
-    æŒ‡é’ˆç±»åž‹ï¼šç©º(void*)ç±»åž‹æŒ‡é’ˆï¼Œå¯ä»¥è¢«ä»»ä½•æ•°æ®æŒ‡é’ˆç±»åž‹çš„åœ°å€å€¼èµ‹å€¼(å‡½æ•°æŒ‡é’ˆä¸èƒ½èµ‹å€¼ç»™å®ƒ)
+10. Êý¾ÝÀàÐÍ
+    ÎÄ×Ö³£Á¿£º²»ÄÜ¸Ä±ä£¬²»ÄÜÑ°Ö·
+    Ê®½øÖÆ¡¢°Ë½øÖÆ¡¢Ê®Áù½øÖÆ
+    ±äÁ¿£¬c++¹Ø¼ü×Ö
+    ¶ÔÏó¶¨Òå
+    Ö¸ÕëÀàÐÍ£º¿Õ(void*)ÀàÐÍÖ¸Õë£¬¿ÉÒÔ±»ÈÎºÎÊý¾ÝÖ¸ÕëÀàÐÍµÄµØÖ·Öµ¸³Öµ(º¯ÊýÖ¸Õë²»ÄÜ¸³Öµ¸øËü)
 
-11. å­—ç¬¦ä¸²ç±»åž‹
+11. ×Ö·û´®ÀàÐÍ
 
-12. consté™å®šä¿®é¥°ç¬¦  //example: constusing.cpp
+12. constÏÞ¶¨ÐÞÊÎ·û  //example: constusing.cpp
 
-13. å¼•ç”¨ç±»åž‹ï¼šå¼•ç”¨(reference)æœ‰æ—¶å€™åˆç§°ä¸ºåˆ«å(alias)ï¼Œç±»ä¼¼æŒ‡é’ˆ
+13. ÒýÓÃÀàÐÍ£ºÒýÓÃ(reference)ÓÐÊ±ºòÓÖ³ÆÎª±ðÃû(alias)£¬ÀàËÆÖ¸Õë
 
-14. æžšä¸¾ç±»åž‹ //
+14. Ã¶¾ÙÀàÐÍ //
 
 
 

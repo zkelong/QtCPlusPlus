@@ -11,13 +11,13 @@ void enumeration_define()
     std::cout << "input: " << input << "\n"
               << "append: " << append << std::endl;
 
-    //æžšä¸¾ç±»åž‹ï¼šå¯ä»¥ç”¨ä½œç±»åž‹æ ‡è¯†ç¬¦
+    //Ã¶¾ÙÀàÐÍ£º¿ÉÒÔÓÃ×÷ÀàÐÍ±êÊ¶·û
     open_modes om = output;
     std::cout << "om: " << om << std::endl;
 
-    //ä¸èƒ½ä½¿ç”¨æžšä¸¾æˆå‘˜è¿›è¡Œè¿­ä»£
+    //²»ÄÜÊ¹ÓÃÃ¶¾Ù³ÉÔ±½øÐÐµü´ú
 
-    //å¯ä»¥å®šä¹‰ä¸€ä¸ªç”±æžšä¸¾æˆå‘˜çš„å€¼ç´¢å¼•çš„å­—ç¬¦ä¸²æ•°ç»„
+    //¿ÉÒÔ¶¨ÒåÒ»¸öÓÉÃ¶¾Ù³ÉÔ±µÄÖµË÷ÒýµÄ×Ö·û´®Êý×é
 
     //point2w == point3d
     enum Points {point2d = 2, point2w, point3d = 3, point3w};
@@ -27,8 +27,8 @@ void enumeration_define()
               << "point3d: " << point3d << "\n"
               << "point3w: " << point3w << std::endl;
 
-    //Points pt2w = 3; //æžšä¸¾ä¸èƒ½åˆå§‹åŒ–ä¸ºintæ•´æ•°
-    Points add = point3d; //æžšä¸¾ç±»åž‹ä»¶å¯ä»¥ç›¸äº’èµ‹å€¼
+    //Points pt2w = 3; //Ã¶¾Ù²»ÄÜ³õÊ¼»¯ÎªintÕûÊý
+    Points add = point3d; //Ã¶¾ÙÀàÐÍ¼þ¿ÉÒÔÏà»¥¸³Öµ
 
     std::cout << "Points add = point3d: " << add << "\t" << point3d << std::endl;
 }

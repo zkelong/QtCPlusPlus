@@ -1,15 +1,15 @@
 #include "variable.h"
 
 /*
-å˜é‡æ˜¯å¯å¯»å€çš„(addressable)
-æœ‰ä¸¤ä¸ªå€¼ä¸Žå˜é‡å…³è”ï¼š
-    1. å®ƒçš„æ•°æ®å€¼ï¼Œå³å€¼(rvalue)
-    2. å®ƒçš„åœ°å€å€¼ï¼Œå·¦å€¼(lvalue)
- å£°æ˜Žå¯¹è±¡(declaration)ï¼š
-    ç”±å…³é”®å­—externä»¥åŠè·Ÿåœ¨åŽé¢çš„å¯¹è±¡ç±»åž‹ä»¥åŠå¯¹è±¡çš„åå­—æž„æˆ
-    ä¸æ˜¯å®šä¹‰ï¼Œä¸ä¼šå¼•èµ·å†…å­˜åˆ†é…
-C++å…³é”®å­—
-    å˜é‡åä¸èƒ½ä¸ºå…³é”®å­—
+±äÁ¿ÊÇ¿ÉÑ°Ö·µÄ(addressable)
+ÓÐÁ½¸öÖµÓë±äÁ¿¹ØÁª£º
+    1. ËüµÄÊý¾ÝÖµ£¬ÓÒÖµ(rvalue)
+    2. ËüµÄµØÖ·Öµ£¬×óÖµ(lvalue)
+ ÉùÃ÷¶ÔÏó(declaration)£º
+    ÓÉ¹Ø¼ü×ÖexternÒÔ¼°¸úÔÚºóÃæµÄ¶ÔÏóÀàÐÍÒÔ¼°¶ÔÏóµÄÃû×Ö¹¹³É
+    ²»ÊÇ¶¨Òå£¬²»»áÒýÆðÄÚ´æ·ÖÅä
+C++¹Ø¼ü×Ö
+    ±äÁ¿Ãû²»ÄÜÎª¹Ø¼ü×Ö
 */
 
 void varable_type()
@@ -17,15 +17,19 @@ void varable_type()
     varable_define();
 }
 
-
 void varable_define()
 {
-    int ival = 2048; //æ˜¾ç¤ºè¯­æ³•ï¼Œèµ‹å€¼æ“ä½œç¬¦
-    int iival(2048); //éšå¼å½¢å¼
+    int ival = 2048; //ÏÔÊ¾Óï·¨£¬¸³Öµ²Ù×÷·û
+    int iival(2048); //ÒþÊ½ÐÎÊ½
 
-    //æ¯ç§å†…ç½®æ•°æ®ç±»åž‹éƒ½æ”¯æŒä¸€ç§ç‰¹æ®Šçš„æž„é€ å‡½æ•°è¯­æ³•ï¼Œå¯å°†å¯¹è±¡åˆå§‹åŒ–ä¸º0ã€‚
+    std::cout << "±äÁ¿(variable)¿ÉÑ°Ö·µÄ£¨addressable£©£¬ÉùÃ÷£¨extern int xx£©£º²»Í¬¶¨Òå£¬²»»áÒýÆðÄÚ´æ·ÖÅä" << std::endl;
+    std::cout << "ÏÔÊ¾¸³Öµ£ºint ival = 2048; ÒþÊ½¸³Öµ£ºint iival(2048);" << std::endl;
+
+    //Ã¿ÖÖÄÚÖÃÊý¾ÝÀàÐÍ¶¼Ö§³ÖÒ»ÖÖÌØÊâµÄ¹¹Ôìº¯ÊýÓï·¨£¬¿É½«¶ÔÏó³õÊ¼»¯Îª0¡£
     int int1 = int();
     double double1 = double();
 
-    std::cout << ival << '\t' << iival << '\t' << int1 << '\t' << double1 << std::endl;
+    std::cout << "Ã¿ÖÖÄÚÖÃÊý¾ÝÀàÐÍ¶¼Ö§³ÖÒ»ÖÖÌØÊâµÄ¹¹Ôìº¯ÊýÓï·¨£¬¿É½«¶ÔÏó³õÊ¼»¯Îª0:"
+              << "\n\t int int1 = int(); double double1 = double();" << std::endl;
+    std::cout << "ival1, iival, int1, double1µÄÖµ£º" << ival << '\t' << iival << '\t' << int1 << '\t' << double1 << std::endl;
 }

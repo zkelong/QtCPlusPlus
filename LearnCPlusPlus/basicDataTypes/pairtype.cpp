@@ -9,10 +9,10 @@ void pair_type()
 void pair_define()
 {
     std::pair<std::string, std::string> author("James", "Joyce");
-    //å¯ä»¥ç”¨æˆå‘˜(member access notation)è®¿é—®pairä¸­çš„å•ä¸ªå…ƒç´ ï¼Œå®ƒä»¬çš„åå­—ä¸ºfirstå’Œsecond
+    //¿ÉÒÔÓÃ³ÉÔ±(member access notation)·ÃÎÊpairÖĞµÄµ¥¸öÔªËØ£¬ËüÃÇµÄÃû×ÖÎªfirstºÍsecond
     std::cout << author.first << "  " << author.second << std::endl;
 }
 /*
-å¯ä»¥åœ¨å•ä¸ªå¯¹è±¡å†…éƒ¨æŠŠç›¸åŒç±»å‹æˆ–ä¸åŒç±»å‹çš„--ä¸¤ä¸ª--å€¼å…³è”èµ·æ¥
+¿ÉÒÔÔÚµ¥¸ö¶ÔÏóÄÚ²¿°ÑÏàÍ¬ÀàĞÍ»ò²»Í¬ÀàĞÍµÄ--Á½¸ö--Öµ¹ØÁªÆğÀ´
 
 */

@@ -1,5 +1,6 @@
 #include "constkeywords.h"
 
+using namespace std;
 
 void const_keywords()
 {
@@ -12,12 +13,15 @@ void const_using()
     //bufSize += 1;
     std::cout << "bufSize: " << bufSize << std::endl;
 
-    //è¯•å›¾å°†ä¸€ä¸ªéžconstå¯¹è±¡çš„æŒ‡é’ˆæŒ‡å‘ä¸€ä¸ªå¸¸é‡å¯¹è±¡ï¼Œä¼šå¼•èµ·ç¼–è¯‘é”™è¯¯
-    const double *cptr; //æŒ‡å‘doubleç±»åž‹çš„constå¯¹è±¡çš„æŒ‡é’ˆï¼ŒæŒ‡å‘çš„å¯¹è±¡æ˜¯å¸¸é‡ï¼Œcptræœ¬èº«ä¸æ˜¯å¸¸é‡ï¼Œå¯ä»¥é‡æ–°èµ‹å€¼
-    const double minWage = 9.60;    //å®šä¹‰ä¾¿åˆå§‹åŒ–
+    count << "const int bufSize = 512; //±íÊ¾Õâ¸öÊÇ¸ö³£Á¿" << endl;
+    cout << "½«Ò»¸ö·Çconst¶ÔÏóµÄÖ¸ÕëÖ¸ÏòÒ»¸ö³£Á¿¶ÔÏó£¬»áÒýÆð±àÒë´íÎó" << endl;
+
+    //ÊÔÍ¼½«Ò»¸ö·Çconst¶ÔÏóµÄÖ¸ÕëÖ¸ÏòÒ»¸ö³£Á¿¶ÔÏó£¬»áÒýÆð±àÒë´íÎó
+    const double *cptr; //Ö¸ÏòdoubleÀàÐÍµÄconst¶ÔÏóµÄÖ¸Õë£¬Ö¸ÏòµÄ¶ÔÏóÊÇ³£Á¿£¬cptr±¾Éí²»ÊÇ³£Á¿£¬¿ÉÒÔÖØÐÂ¸³Öµ
+    const double minWage = 9.60;    //¶¨Òå±ã³õÊ¼»¯
     cptr = &minWage;
     const double pi = 3.1415926;
-    const double *const pi_ptr = &pi; //pi_stræŒ‡å‘çš„å¯¹è±¡çš„å€¼ä»¥åŠå®ƒçš„åœ°å€æœ¬èº«éƒ½ä¸èƒ½è¢«æ”¹å˜
+    const double *const pi_ptr = &pi; //pi_strÖ¸ÏòµÄ¶ÔÏóµÄÖµÒÔ¼°ËüµÄµØÖ·±¾Éí¶¼²»ÄÜ±»¸Ä±ä
     std::cout << "bufSize: " << bufSize << "\t"
               << "minWage: " << minWage << "\t"
               << "*cptr: " << *cptr << "\t"
@@ -27,6 +31,6 @@ void const_using()
 }
 
 /*
-constçš„æŒ‡é’ˆå¸¸è¢«ç”¨ä½œå‡½æ•°çš„å½¢å¼å‚æ•°
+constµÄÖ¸Õë³£±»ÓÃ×÷º¯ÊýµÄÐÎÊ½²ÎÊý
 int strcmp(const char *str1, const char *str2);
 */

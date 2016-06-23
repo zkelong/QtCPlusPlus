@@ -7,11 +7,11 @@ void bool_type()
 
 void bool_using()
 {
-    //å¯ä»¥ç”¨ä½œç®—æœ¯å€¼
+    //¿ÉÒÔÓÃ×÷ËãÊõÖµ
     bool test = true;
 
     int a = test + 11;
     std::cout << a << std::endl;
 }
 
-//æ•´æ•°ç±»å‹çš„å¯¹è±¡ï¼Œä½†å®ƒä¸èƒ½å£°æ˜ä¸ºsignedã€unsignedã€shortæˆ–long.
+//ÕûÊıÀàĞÍµÄ¶ÔÏó£¬µ«Ëü²»ÄÜÉùÃ÷Îªsigned¡¢unsigned¡¢short»òlong.

@@ -8,13 +8,13 @@ void complexnumber_type()
 
 void complexnumber_define()
 {
-    //çº¯è™šæ•° 0 + 7i
+    //´¿ĞéÊı 0 + 7i
     std::complex<double> purei(0, 7);
-    //è™šæ•°éƒ¨åˆ†ç¼ºçœä¸º0ï¼š 3 + 0i
+    //ĞéÊı²¿·ÖÈ±Ê¡Îª0£º 3 + 0i
     std::complex<float> real_num(3);
-    //å®éƒ¨å’Œè™šéƒ¨å‡çœä¸º0ï¼š0 + 0i
+    //Êµ²¿ºÍĞé²¿¾ùÊ¡Îª0£º0 + 0i
     std::complex<long double> zero;
-    //ç”¨å¦ä¸€ä¸ªå¤æ•°å¯¹è±¡æ¥åˆå§‹åŒ–ä¸€ä¸ªå¤æ•°å¯¹è±¡
+    //ÓÃÁíÒ»¸ö¸´Êı¶ÔÏóÀ´³õÊ¼»¯Ò»¸ö¸´Êı¶ÔÏó
     std::complex<double> purei2(purei);
 
     std::complex<double> conjugate[2] = {
@@ -25,12 +25,12 @@ void complexnumber_define()
     std::complex<double> *ptr = &conjugate[0];
     std::complex<double> &ref = *ptr;
 
-    std::cout << purei << std::endl; //è¾“å‡ºå†…å®¹ä¸ºï¼ˆ0ï¼Œ7ï¼‰
+    std::cout << purei << std::endl; //Êä³öÄÚÈİÎª£¨0£¬7£©
     for(int i = 0; i < sizeof(conjugate)/sizeof(std::complex<double>); i++)
     {
         std::cout << conjugate[i] << " ";
     }
     std::cout << std::endl;
 
-    //å¤æ•°æ”¯æŒåŠ ã€å‡ã€ä¹˜ã€é™¤å’Œç›¸ç­‰æ¯”è¾ƒã€‚å®ƒä¹Ÿæ”¯æŒå¯¹å®éƒ¨å’Œè™šéƒ¨çš„è®¿é—®ã€‚
+    //¸´ÊıÖ§³Ö¼Ó¡¢¼õ¡¢³Ë¡¢³ıºÍÏàµÈ±È½Ï¡£ËüÒ²Ö§³Ö¶ÔÊµ²¿ºÍĞé²¿µÄ·ÃÎÊ¡£
 }

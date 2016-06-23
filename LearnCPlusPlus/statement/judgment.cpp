@@ -3,7 +3,7 @@
 void judgment()
 {
     int n = 0;
-    //ifè¯­å¥
+    //ifÓï¾ä
     if(n == 1)
     {
         std::cout << "n equal 1!" << std::endl;
@@ -12,15 +12,15 @@ void judgment()
     {
         std::cout << "n not equal 1!" << std::endl;
     }
-    //switchè¯­å¥
+    //switchÓï¾ä
     switch(n)
     {
-    //caseåé¢å¿…é¡»æ˜¯ä¸€ç§æ•´æ•°ç±»å‹çš„å¸¸é‡è¡¨è¾¾å¼
-    //caseæ ‡ç­¾ä¸èƒ½æœ‰åŒæ ·çš„å€¼ï¼šå¦‚æœæœ‰ï¼Œåˆ™å¯¼è‡´ç¼–è¯‘é”™è¯¯
+    //caseºóÃæ±ØĞëÊÇÒ»ÖÖÕûÊıÀàĞÍµÄ³£Á¿±í´ïÊ½
+    //case±êÇ©²»ÄÜÓĞÍ¬ÑùµÄÖµ£ºÈç¹ûÓĞ£¬Ôòµ¼ÖÂ±àÒë´íÎó
     case 0:
     {std::string aa = "askdlgka";
         std::cout << aa << std::endl;
-        break;  //æ²¡æœ‰breakï¼Œå°†æ‰§è¡Œåˆ°ç»“å°¾çš„æ‰€æœ‰è¯­å¥
+        break;  //Ã»ÓĞbreak£¬½«Ö´ĞĞµ½½áÎ²µÄËùÓĞÓï¾ä
     }
     case 1:
         std::cout << "n equal 1!" << std::endl;
@@ -32,7 +32,7 @@ void judgment()
     std::cin >> ch;
     switch(ch)
     {
-    //a,e,i,o,uçš„ä»»ä½•ä¸€ä¸ªå‡ºç°ï¼Œéƒ½æ˜¯vowelCnté€’å¢
+    //a,e,i,o,uµÄÈÎºÎÒ»¸ö³öÏÖ£¬¶¼ÊÇvowelCntµİÔö
     case 'a':
     case 'e':
     case 'i':
@@ -51,15 +51,15 @@ void judgment()
 }
 
 /*
-å£°æ˜è¯­å¥å¯ä»¥æ”¾åœ¨switchè¯­å¥çš„æ¡ä»¶ä¸­ï¼Œswitch(int ival = get_response)
+ÉùÃ÷Óï¾ä¿ÉÒÔ·ÅÔÚswitchÓï¾äµÄÌõ¼şÖĞ£¬switch(int ival = get_response)
 case illegal_definition:
-    //é”™è¯¯ï¼šå£°æ˜è¯­å¥å¿…é¡»æ”¾åœ¨è¯­å¥å—ä¸­
+    //´íÎó£ºÉùÃ÷Óï¾ä±ØĞë·ÅÔÚÓï¾ä¿éÖĞ
     string file_name = get_file_name();
     ...
     break;
 case ok:
     {
-        //ok:å£°æ˜è¯­å¥è¢«æ”¾åœ¨è¯­å¥å—ä¸­
+        //ok:ÉùÃ÷Óï¾ä±»·ÅÔÚÓï¾ä¿éÖĞ
         string file_name = get_file_name();
         ...
         break;

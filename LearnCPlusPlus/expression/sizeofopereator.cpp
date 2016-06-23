@@ -8,16 +8,16 @@ void sizeof_operator()
 void sizeof_example()
 {
     int ia[] = {0, 1, 2};
-    //sizeofè¿”å›æ•´ä¸ªæ•°ç»„çš„å¤§å°
+    //sizeof·µ»ØÕû¸öÊı×éµÄ´óĞ¡
     size_t array_size = sizeof ia;
-    //sizeofè¿”å›intç±»å‹çš„å¤§å°
+    //sizeof·µ»ØintÀàĞÍµÄ´óĞ¡
     size_t element_size = array_size / sizeof(int);
     std::cout << "sizeof: " << array_size << "  " << element_size << std::endl;
 }
 
 /*
-sizeofæ“ä½œç¬¦çš„ä½œç”¨æ˜¯è¿”å›ä¸€ä¸ªå¯¹è±¡æˆ–ç±»å‹åçš„å­—èŠ‚é•¿åº¦
-sizeof(type name); //ç±»å‹åªèƒ½ç”¨è¿™ä¸ªå½¢å¼
+sizeof²Ù×÷·ûµÄ×÷ÓÃÊÇ·µ»ØÒ»¸ö¶ÔÏó»òÀàĞÍÃûµÄ×Ö½Ú³¤¶È
+sizeof(type name); //ÀàĞÍÖ»ÄÜÓÃÕâ¸öĞÎÊ½
 sizeof(objec);
 sizeof object;
 */

@@ -8,7 +8,7 @@
 //    tq.display_map_text();
 //}
 
-//void TextQuery::retrieve_text()  //æ‰“å¼€å¹¶è¯»å–æ–‡æœ¬
+//void TextQuery::retrieve_text()  //´ò¿ª²¢¶ÁÈ¡ÎÄ±¾
 //{
 //    string file_name;
 //    cout << "please enter file name: ";
@@ -75,7 +75,7 @@
 //        { iter++; continue; }
 //        if ( (*iter)[ (*iter).size()- 1 ] == 's' )
 //            suffix_s( *iter );
-//        // å…¶ä»–çš„åç¼€å¤„ç†æ”¾åœ¨è¿™é‡Œ
+//        // ÆäËûµÄºó×º´¦Àí·ÅÔÚÕâÀï
 //        iter++;
 //    }
 //}
@@ -103,7 +103,7 @@
 //        word.erase( pos3+1, 2 );
 //        return;
 //    }
-//    // å»æ‰å°¾éƒ¨çš„ 's'
+//    // È¥µôÎ²²¿µÄ 's'
 //    word.erase( pos3+2 );
 //    // watch out for "'s"
 //    if ( word[ pos3+1 ] == '\'' )
@@ -152,7 +152,7 @@
 //        copy( input_set, eos,
 //              inserter( exclusion_set, exclusion_set.begin() ));
 //    }
-//    // éå†å•è¯, è¾“å…¥é”®/å€¼å¯¹
+//    // ±éÀúµ¥´Ê, ÊäÈë¼ü/Öµ¶Ô
 //    vector<string,allocator> *text_words = text_locations ->first;
 //    vector<location,allocator> *text_locs = text_locations ->second;
 //    register int elem_cnt = text_words ->size();
@@ -163,7 +163,7 @@
 //             exclusion_set.count( textword ))
 //            continue;
 //        if ( ! word_map->count((*text_words)[ix] ))
-//        { // æ²¡æœ‰, æ·»åŠ :
+//        { // Ã»ÓĞ, Ìí¼Ó:
 //            loc *ploc = new vector<location,allocator>;
 //            ploc->push_back( (*text_locs)[ix] );
 //            word_map->insert( value_type( (*text_words)[ix], ploc ));
@@ -187,8 +187,8 @@
 //        while (( pos = query_text.find_first_of( caps, pos ))
 //               != string::npos )
 //            query_text[ pos ] = tolower( query_text[pos] );
-//        // å¦‚æœå¯¹ map ç´¢å¼•, è¾“å…¥ query_text, å¦‚æ— 
-//        // è¯´æ˜æ²¡æœ‰è¦æ‰¾çš„è¯
+//        // Èç¹û¶Ô map Ë÷Òı, ÊäÈë query_text, ÈçÎŞ
+//        // ËµÃ÷Ã»ÓĞÒªÕÒµÄ´Ê
 //        if ( !word_map->count( query_text )) {
 //            cout << "\nSorry. There are no entries for "
 //                 << query_text << ".\n\n";
@@ -213,8 +213,8 @@
 //        for ( ; it != occurrence_lines.end(); ++it ) {
 //            int line = *it;
 //            cout << "\t( line "
-//                    // ä¸è¦ç”¨ä» 0 å¼€å§‹æœ‰
-//                    // æ–‡æœ¬è¡ŒæŠŠç”¨æˆ·å¼„è¿·ç³Šäº†
+//                    // ²»ÒªÓÃ´Ó 0 ¿ªÊ¼ÓĞ
+//                    // ÎÄ±¾ĞĞ°ÑÓÃ»§ÅªÃÔºıÁË
 //                 << line + 1 << " ) "
 //                 << (*lines_of_text)[line] << endl;
 //        }

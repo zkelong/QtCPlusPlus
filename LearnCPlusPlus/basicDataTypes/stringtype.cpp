@@ -1,34 +1,80 @@
 #include "stringtype.h"
 #include <cstring>
 #include <string>
+#include <conio.h>
+
+using namespace std;
 
 void string_type()
 {
-    //c_type_sting();
-    //type_string();
-    string_c_string();
+    bool quit(false);
+    int mId;
+    while(1) {
+        system("cls");  //ÇåÆÁ¿ØÖÆÌ¨
+        cin.clear(); //Çå³ıstd::cinµÄ´íÎó×´Ì¬
+        cin.sync();  //Çå¿ÕÊäÈë»º³åÇø
+
+        cout << "×Ö·û´®ÀàĞÍ: " << endl;
+        cout << "1.C·ç¸ñ×Ö·û´®" << endl;
+        cout << "2.×Ö·û´®ÀàĞÍ" << endl;
+        cout << "3.C·ç¸ñ×Ö·û´®ÓëstringÀàĞÍ×ª»»" << endl;
+        cout << "0.ÍË³ö" << endl;
+        while(cout << "ÊäÈëÑ¡Ïî½øÈë£º", cin >> mId, !(mId >= 0 && mId <= 3) || cin.fail()) {
+            cout << "Öµ²»¶Ô!" << endl;
+            cin.clear(); //Çå³ıstd::cinµÄ´íÎó×´Ì¬
+            cin.sync();  //Çå¿ÕÊäÈë»º³åÇø
+        }
+        if(mId != 0)
+            system("cls");  //ÇåÆÁ¿ØÖÆÌ¨
+        switch (mId) {
+        case 1:
+            c_type_sting();
+            break;
+        case 2:
+            type_string();
+            break;
+        case 3:
+            string_c_string();
+            break;
+        case 0:
+            quit = true;
+            break;
+        default:
+            break;
+        }
+        getch(); //ÔÚwindowsÆ½Ì¨ÏÂ´Ó¿ØÖÆÌ¨ÎŞ»ØÏÔµØÈ¡Ò»¸ö×Ö·û£¬ÔÚlinuxÏÂÊÇÓĞ»ØÏÔµÄ¡£--Í·ÎÄ¼ş#include <conio.h>
+        if(quit) {
+            break;
+        }
+    }
 }
 
 
-//Cé£æ ¼å­—ç¬¦ä¸²
+//C·ç¸ñ×Ö·û´®
 /*
-è¢«å­˜å‚¨åœ¨ä¸€ä¸ªå­—ç¬¦æ•°ç»„ä¸­ï¼Œä¸€èˆ¬é€šè¿‡ä¸€ä¸ªchar*ç±»å‹çš„æŒ‡é’ˆæ¥æ“çºµå®ƒã€‚
-ç©ºå­—ç¬¦ä¸²ï¼šæŒ‡é’ˆç½®ä¸º0ï¼ŒæŒ‡å‘çš„å­—ç¬¦æ•°ç»„åªåŒ…å«ä¸€ä¸ªç©ºå­—ç¬¦ã€‚
-å­—ç¬¦ä¸²ç±»å‹ï¼šstringç±»å‹èƒ½å¤Ÿè‡ªåŠ¨å°†Cé£æ ¼çš„å­—ç¬¦ä¸²è½¬æ¢æˆstringå¯¹è±¡ã€‚åä¹‹ä¸è¡Œï¼Œå¿…é¡»æ˜¾å¼åœ°è°ƒç”¨åä¸ºc_str()çš„æ“ä½œã€‚
+±»´æ´¢ÔÚÒ»¸ö×Ö·ûÊı×éÖĞ£¬Ò»°ãÍ¨¹ıÒ»¸öchar*ÀàĞÍµÄÖ¸ÕëÀ´²Ù×İËü¡£
+¿Õ×Ö·û´®£ºÖ¸ÕëÖÃÎª0£¬Ö¸ÏòµÄ×Ö·ûÊı×éÖ»°üº¬Ò»¸ö¿Õ×Ö·û¡£
+×Ö·û´®ÀàĞÍ£ºstringÀàĞÍÄÜ¹»×Ô¶¯½«C·ç¸ñµÄ×Ö·û´®×ª»»³Éstring¶ÔÏó¡£·´Ö®²»ĞĞ£¬±ØĞëÏÔÊ½µØµ÷ÓÃÃûÎªc_str()µÄ²Ù×÷¡£
 */
 void c_type_sting()
 {
-    char *str1 = "b12345678"; //å¸¸é‡å­—ç¬¦ä¸²ï¼Œåªè¯»ï¼Œå­˜æ”¾åœ¨å¸¸é‡åŒºåŸŸ
-    char *str2 = {"a2134567s8"};
-    char str3[] = "32345678";  //æ•°ç»„ï¼Œå¯å†™ï¼Œå­˜æ”¾åœ¨éå¸¸é‡åŒºåŸŸ
+    const char *str1 = "b12345678";  //³£Á¿×Ö·û´®£¬Ö»¶Á£¬´æ·ÅÔÚ³£Á¿ÇøÓò--const
+    const char *str2 = {"a2134567s8"};
+    char str3[] = "32345678";  //Êı×é£¬¿ÉĞ´£¬´æ·ÅÔÚ·Ç³£Á¿ÇøÓò
     char str4[] = "22345678";
     char str5[20] = "123";
-    int str_length = strlen(str1); //8
-    int equal = strcmp(str3, str4);  //ç›¸ç­‰è¿”å›0ï¼Œstr1>str2è¿”å›æ­£æ•°ï¼Œstr1<str2è¿”å›è´Ÿæ•°
-    //int equal1 = strmcmp(str1, str2); //ä¸ç®¡ç”¨
-    strcpy(str3, str4);  //æ‹·è´
-    strcat(str5, str4);  //æ‹¼æ¥å­—ç¬¦ä¸²
 
+    int str_length = strlen(str1); //9
+    int equal = strcmp(str3, str4);  //ÏàµÈ·µ»Ø0£¬str1>str2·µ»ØÕıÊı£¬str1<str2·µ»Ø¸ºÊı
+    //int equal1 = strmcmp(str1, str2); //²»¹ÜÓÃ
+    strcpy(str3, str4);  //¿½±´
+    strcat(str5, str4);  //Æ´½Ó×Ö·û´®
+
+    cout << "³£Á¿×Ö·û´®£¬Ö»¶Á£¬´æ·ÅÔÚ³£Á¿ÇøÓò£ºchar *str1 = \"123\"" << std::endl;
+    cout << "×Ö·ûÊı×é£ºchar str3[] = \"12314\"" << std::endl;
+    cout << "strlen()--×Ö·û´®³¤¶È(²»º¬Ä©Î²½áÊø·û)£»strcmp()--×Ö·û±È½Ï(·µ»ØÖµ£º0£¬ÕıÊı£¬¸ºÊı; ³£Á¿×Ö·û´®±È½ÏÎŞÓÃ)" << std::endl;
+    cout << "strcpy()--¸´ÖÆ£»strcat()--Æ´½Ó×Ö·û´®" << std::endl;
+    cout << "×Ö·û´®¿ÉÒÔÖ±½ÓcinÁ÷Êä³ö" << endl;
     std::cout << "str1: " << str1 << "\n"
               << "str2: " << str2 << "\n"
               << "str_length: " << str_length << "\n"
@@ -37,9 +83,10 @@ void c_type_sting()
               << "str5: " << str5 << std::endl;
 }
 
-//å­—ç¬¦ä¸²ç±»å‹
+//×Ö·û´®ÀàĞÍ
 void type_string()
 {
+    std::cout << "stringÀàĞÍÔÚÃüÃû¿Õ¼ästdÀïÃæ" << endl;
     std::string st("The expense of spirit\n");
     std::cout << "The size of "
          << st
@@ -48,28 +95,36 @@ void type_string()
     std::string st2;
     if(st2.empty())
     {
-        std::cout << "st2 is empty!" << std::endl;
+        std::cout << "empty()--ÅĞ¶Ï×Ö·û´®ÊÇ·ñÎª¿Õ£»st2 is empty!" << std::endl;
     }
     st2 = st;
-    std::cout << "After st2 = st, st2: "
+    std::cout << "×Ö·û´®Ö±½Ó¸³Öµ£ºst2 = st, st2: "
               << st2 << std::endl;
 }
 
-//Cé£æ ¼å­—ç¬¦ä¸²ä¸stringç±»å‹è½¬æ¢
+//C·ç¸ñ×Ö·û´®ÓëstringÀàĞÍ×ª»»
 void string_c_string()
 {
-    char *ps = "abcd";  //Cé£æ ¼å­—ç¬¦ä¸²
-    std::string s1("hello");
-    std::string s2("world");
+    const char *ps = "abcd";  //C·ç¸ñ×Ö·û´®
+
+    cout << "×Ö·û´®ÀàĞÍ¿ÉÒÔÖ±½ÓÏà¼Ó£ºs3 = s1 + ps + s2(const char *ps)" << endl;
+
+    std::string s1("hello ");
+    std::string s2(" world");
     std::string s3 = s1 + ps + s2;
     std::cout << s1 << "\n"
               << s2 << "\n"
               << s3 << std::endl;
 
+    cout << "stringÖ±½ÓÓÃconst char* ¸³Öµ" << endl;
+    cout << "const char *pc = \"helloMybaby....\"; ÊÇ³£Á¿£¬ËùÒÔÓÃconst" << endl;
+
     const char *pc = "a character array";
     std::string str1 = pc;
     std::cout << "pc: " << pc << "\n"
               << "str1: " << str1 << std::endl;
+
+    cout << "string ×ªÎªconst char* ÓÃstr.c_str()" << endl;
     const char *str = str1.c_str();
     std::cout << "str: " << str << std::endl;
 }

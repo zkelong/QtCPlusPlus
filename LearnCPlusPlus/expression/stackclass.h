@@ -8,7 +8,7 @@ void test_stackclass();
 class stackclass
 {
 public:
-    //åˆå§‹åŒ–_stackçš„å¤§å°ï¼Œ_topä¸º0
+    //³õÊ¼»¯_stackµÄ´óĞ¡£¬_topÎª0
     stackclass(int capacity)
         : _stack(capacity), _top(0) {}
 
