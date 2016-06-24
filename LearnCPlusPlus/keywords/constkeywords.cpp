@@ -13,7 +13,7 @@ void const_using()
     //bufSize += 1;
     std::cout << "bufSize: " << bufSize << std::endl;
 
-    count << "const int bufSize = 512; //表示这个是个常量" << endl;
+    cout << "const int bufSize = 512; //表示这个是个常量" << endl;
     cout << "将一个非const对象的指针指向一个常量对象，会引起编译错误" << endl;
 
     //试图将一个非const对象的指针指向一个常量对象，会引起编译错误

@@ -3,7 +3,6 @@
 #include "variable.h"
 #include "pointer.h"
 #include "stringtype.h"
-#include "constkeywords.h"
 #include "referencetype.h"
 #include "booltype.h"
 #include "arraytype.h"
@@ -30,7 +29,6 @@ void test_basic_data_types()
         cout << "2.变量" << endl;
         cout << "3.指针类型" << endl;
         cout << "4.字符串类型" << endl;
-        cout << "5.const限定修饰符" << endl;
         cout << "6.引用类型" << endl;
         cout << "7.布尔类型" << endl;
         cout << "8.数组类型" << endl;
@@ -60,11 +58,9 @@ void test_basic_data_types()
         case 4:
             string_type();   //字符串类型
             break;
-        case 5:
-            const_keywords(); //const限定修饰符
             break;
         case 6:
-            reference_type(); //引用类型
+            reference_type(); //引用类型----mark:2.16-06-23
             break;
         case 7:
             bool_type();  //布尔类型
@@ -79,7 +75,7 @@ void test_basic_data_types()
             complexnumber_type();  //虚数类型
             break;
         case 11:
-            typedef_type();       //typedef名字
+//            typedef_type();       //typedef名字
             break;
         case 12:
             volatile_type();   //volatile限定修饰符

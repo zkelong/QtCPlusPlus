@@ -1,3 +1,6 @@
+#include "keywords.h"
+#include "keywordsIntroduce.h"
+#include "constkeywords.h"
 #include <iostream>
 #include <conio.h>
 
@@ -15,6 +18,7 @@ void keywords()
         cout << "关键字: " << endl;
         cout << "1.C关键字" << endl;
         cout << "2.C++关键字" << endl;
+        cout << "3.const" << endl;
         cout << "0.退出" << endl;
         while(cout << "输入选项进入：", cin >> mId, !(mId >= 0 && mId < 13) || cin.fail()) {
             cout << "值不对!" << endl;
@@ -25,9 +29,24 @@ void keywords()
             system("cls");  //清屏控制台
         switch (mId) {
         case 1:
+            cIntroduction();
             break;
         case 2:
+            cPlusIntroduction();
+            break;            
+        case 3:
+            const_keywords();
             break;
+//        case :
+//            break;
+//        case :
+//            break;
+//        case :
+//            break;
+//        case :
+//            break;
+//        case :
+//            break;
         case 0:
             quit = true;
             break;

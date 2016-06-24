@@ -1,52 +1,11 @@
-#include "ckeywords.h"
+#include "keywordsIntroduce.h"
 #include <iostream>
 #include <conio.h>
 
 using namespace std;
 
-
-
-void ckeywords()
-{
-    bool quit(false);
-    int mId;
-    while(1) {
-        system("cls");  //清屏控制台
-        cin.clear(); //清除std::cin的错误状态
-        cin.sync();  //清空输入缓冲区
-
-        cout << "C关键字: " << endl;
-        cout << "1.关键字介绍" << endl;
-//        cout << "2.C++关键字" << endl;
-        cout << "0.退出" << endl;
-        while(cout << "输入选项进入：", cin >> mId, !(mId >= 0 && mId < 13) || cin.fail()) {
-            cout << "值不对!" << endl;
-            cin.clear(); //清除std::cin的错误状态
-            cin.sync();  //清空输入缓冲区
-        }
-        if(mId != 0)
-            system("cls");  //清屏控制台
-        switch (mId) {
-        case 1:
-            introduction();
-            break;
-        case 2:
-            break;
-        case 0:
-            quit = true;
-            break;
-        default:
-            break;
-        }
-        getch(); //在windows平台下从控制台无回显地取一个字符，在linux下是有回显的。--头文件#include <conio.h>
-        if(quit) {
-            break;
-        }
-    }
-}
-
 //关键字介绍
-void introduction()
+void cIntroduction()
 {
     cout << "C语言32个关键字" << endl;
     cout << "　关键字就是已被C语言本身使用，不能作其它用途使用的字。例如关键字不能用作变量名、函数名等 " << endl;
@@ -99,4 +58,22 @@ void introduction()
     cout << "　do ：do循环结构，do 1 while(2); 的执行顺序是1->2->1...循环，2为循环条件" << endl;
     cout << "　while ：while循环结构，while(1) 2; 的执行顺序是1->2->1...循环，1为循环条件" << endl;
     cout << "		以上循环语句，当循环条件表达式为真则继续循环，为假则跳出循环。" << endl;
+}
+
+void cPlusIntroduction() {
+    cout << "C++98/03 关键字" << endl;
+    cout << "ISO C++98/03关键字共63个:" << endl;
+    cout << "	asm do if return typedef auto double inline short typeid" << endl;
+    cout << "	bool dynamic_cast int signed typename break else long sizeof union" << endl;
+    cout << "	case enum mutable static unsigned catch explicit namespace static_cast using " << endl;
+    cout << "	char export new struct virtual class extern operator switch void " << endl;
+    cout << "	const false private template volatile const_cast float protected this wchar_t" << endl;
+    cout << "	continue for public throw while default friend register true delete" << endl;
+    cout << "	goto reinterpret_cast try" << endl;
+
+    cout << "C++11 关键字共73个。" << endl;
+    cout << "新增关键字：alignas、alignof、char16_t、char32_t、constexpr、decltype、noexcept、nullptr\n、static_assert、thread_local。" << endl;
+    cout << "auto 的意义改变。" << endl;
+    cout << "register 被视为过时的（可能在未来标准移除）。" << endl;
+    cout << "export 因为实现支持太少（仅Edison Design Group的前端支持），编译效率低下，取消原有意义\n（仍是关键字，但使用它的程序是错误的），改为保留给未来标准使用。" << endl;
 }

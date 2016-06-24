@@ -10,7 +10,6 @@ SOURCES += main.cpp \
     basicDataTypes/variable.cpp \
     basicDataTypes/pointer.cpp \
     basicDataTypes/stringtype.cpp \
-    basicDataTypes/constkeywords.cpp \
     basicDataTypes/referencetype.cpp \
     basicDataTypes/booltype.cpp \
     basicDataTypes/enumerationtype.cpp \
@@ -38,8 +37,9 @@ SOURCES += main.cpp \
     abstractcontainer/abstractcontainer.cpp \
     keywords/keywords.cpp \
     keywords/typedefkeywords.cpp \
-    keywords/c++keywords.cpp \
-    keywords/ckeywords.cpp
+    keywords/constkeywords.cpp \
+    keywords/keywordsIntroduce.cpp \
+    filetool.cpp
 
 #include(deployment.pri)
 #qtcAddDeployment()
@@ -51,7 +51,6 @@ HEADERS += \
     basicDataTypes/variable.h \
     basicDataTypes/pointer.h \
     basicDataTypes/stringtype.h \
-    basicDataTypes/constkeywords.h \
     basicDataTypes/referencetype.h \
     basicDataTypes/booltype.h \
     basicDataTypes/enumerationtype.h \
@@ -79,6 +78,7 @@ HEADERS += \
     abstractcontainer/abstractcontainer.h \
     keywords/keywords.h \
     keywords/typedefkeywords.h \
-    keywords/c++keywords.h \
-    keywords/ckeywords.h
+    keywords/constkeywords.h \
+    keywords/keywordsIntroduce.h \
+    filetool.h
 

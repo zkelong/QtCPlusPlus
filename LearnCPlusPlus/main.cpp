@@ -3,9 +3,10 @@
 #include "statement/statement.h"
 #include "abstractcontainer/abstractcontainer.h"
 //#include "container/container.h"
-#include "keywords/ckeywords.h"
+#include "keywords/keywords.h"
 #include <stdio.h>
 #include <iostream>
+#include <conio.h>
 
 using namespace std;
 
@@ -23,10 +24,9 @@ int main()
         cout << "2.表达式" << endl;
         cout << "3.语句" << endl;
         cout << "4.抽象容器类型" << endl;
-        cout << "98.C关键字" << endl;
-        cout << "99.C++关键字" << endl;
+        cout << "99.关键字" << endl;
         cout << "0.退出" << endl;
-        while(cout << "输入选项进入：", cin >> mId, !((mId >= 0 && mId < 5) || (mId >=98 && mId <= 99)) || cin.fail()) {
+        while(cout << "输入选项进入：", cin >> mId, !((mId >= 0 && mId < 5) || (mId == 99)) || cin.fail()) {
             cout << "值不对!" << endl;
             cin.clear(); //清除std::cin的错误状态
             cin.sync();  //清空输入缓冲区
@@ -46,10 +46,8 @@ int main()
         case 4:
 //            textQuery_test(); //抽象容器类型
             break;
-        case 98:
-            ckeywords();
-            break;
         case 99:
+            keywords();
             break;
         case 0:
             exit(0);
