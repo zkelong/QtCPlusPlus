@@ -5,7 +5,7 @@
 class FileTool
 {
 public:
-    static void show();
+    /*static */void show();
 };
 
 

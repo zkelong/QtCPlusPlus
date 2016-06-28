@@ -12,6 +12,10 @@ void reference_define()
     int *pi = &ival;
     int *&preVal = pi;  //指向指针的引用
 
+    std::cout << "int &reval = ival; //引用必须被初始化" << std::endl;
+    std::cout << "int *&preVal = pi;  //指向指针的引用" << std::endl;
+    std::cout << "引用所有的操作实际上都被运用在它所指的对象上" << std::endl;
+
     reval += 2; //引用所有的操作实际上都被运用在它所指的对象上
 
     std::cout << "ival: " << ival << "\t"

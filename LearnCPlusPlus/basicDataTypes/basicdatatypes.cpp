@@ -60,7 +60,7 @@ void test_basic_data_types()
             break;
             break;
         case 6:
-            reference_type(); //引用类型----mark:2.16-06-23
+            reference_type(); //引用类型
             break;
         case 7:
             bool_type();  //布尔类型
@@ -72,7 +72,7 @@ void test_basic_data_types()
             vector_type();   //vector类型
             break;
         case 10:
-            complexnumber_type();  //虚数类型
+            complexnumber_type();  //虚数类型--mark:206-6-28
             break;
         case 11:
 //            typedef_type();       //typedef名字

@@ -1,6 +1,6 @@
 #include "filetool.h"
 
-FileTool::FileTool()
+/*static */void FileTool::show()
 {
 
 }
