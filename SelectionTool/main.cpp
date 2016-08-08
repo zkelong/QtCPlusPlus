@@ -179,9 +179,9 @@ void rest() //轮休
 
 void order()    //点餐
 {
-    cout << "点餐人选：";
+    cout << "参与点餐人选：";
     coutVector(names);
-    cout << endl << "幸运者：";
+    cout << endl << "TA 点餐-> ";
     srand((unsigned)time(NULL));
     int index = rand() % names.size();
     cout << names[index] << endl;
@@ -232,11 +232,11 @@ void Wchar_tToString(std::string& szDst, wchar_t *wchar)
 //去掉字符串首(左)空格函数
 char* ltrim_lc(char* s)
 {
-    char* s_s=new char[strlen(s)+1];
-    strcpy(s_s,s);
-    char* s_rev=strrev(s_s);
-    s_rev=rtrim_lc(s_rev);
-    char* d_s=strrev(s_rev);
+    char* s_s = new char[strlen(s)+1];
+    strcpy(s_s, s);
+    char* s_rev = strrev(s_s);
+    s_rev = rtrim_lc(s_rev);
+    char* d_s = strrev(s_rev);
     return d_s;
 }
 //去掉字符串尾(右)空格函数
@@ -246,14 +246,14 @@ char* rtrim_lc(char* s)
     strcpy(s_s,s);
     //
     int s_len=strlen(s_s);
-    for(int i=s_len-1;i>=0;i--)
+    for(int i = s_len-1; i>=0; i--)
     {
         if(s_s[i]==' ')
         {
             s_s[i]='\0';
         }
     }
-    char* d_s=new char[strlen(s_s)];
+    char* d_s = new char[strlen(s_s)];
     strcpy(d_s,s_s);
     return d_s;
 }
@@ -266,7 +266,7 @@ char* trim_lc(char* s)
 
 void coutVector(vector<string> vec) {
     for(int i = 0; i < vec.size(); i++) {
-        cout << vec[i] << "\t";
+        cout << vec[i] << "   ";
     }
     cout << endl;
 }
