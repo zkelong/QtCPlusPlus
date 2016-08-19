@@ -75,7 +75,7 @@ void test_basic_data_types()
             complexnumber_type();  //虚数类型--mark:206-6-28
             break;
         case 11:
-//            typedef_type();       //typedef名字
+            //typedef_type();       //typedef名字
             break;
         case 12:
             volatile_type();   //volatile限定修饰符

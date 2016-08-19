@@ -18,6 +18,7 @@ void string_type()
         cout << "1.C风格字符串" << endl;
         cout << "2.字符串类型" << endl;
         cout << "3.C风格字符串与string类型转换" << endl;
+        cout << "4.const与字符串指针" << endl;
         cout << "0.退出" << endl;
         while(cout << "输入选项进入：", cin >> mId, !(mId >= 0 && mId <= 3) || cin.fail()) {
             cout << "值不对!" << endl;
