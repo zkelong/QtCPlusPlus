@@ -42,7 +42,7 @@ void pointerDefine()
     const int ca = 10;
     const int * cap = &ca;
     std::cout << "const int *" << *cap << std::endl;
-    std::count << "const指针，必须初始化且不能改变，指针解引用可以改变值" << std::endl;
+    std::cout << "const指针，必须初始化且不能改变，指针解引用可以改变值" << std::endl;
     int ca2 = 99;
     int * const cap2 = &ca2;
     std::cout << "int * const cap2; *cap2 + 1 = " << *cap2 + 1 << std::endl;
